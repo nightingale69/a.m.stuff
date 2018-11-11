@@ -1,0 +1,41 @@
+<header class="header">
+	<div style="position: fixed; width: 80px; height: 100%; background-color: #212121; z-index: 20; text-align: center" class="menu">
+		<div [ngx-scroll-to]="'home'" class="logo_a" style="cursor: pointer">
+			<img style="position: relative; margin-top: 10px" src="assets/images/description/logo.png" width="80px" height="80px" alt="logo">
+			<div class="eyes">
+				<div class="left_eye"></div>
+				<div class="right_eye"></div>
+			</div>
+		</div>
+		<ul class="navbar">
+			<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
+			<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
+			<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
+			<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
+			<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
+		</ul> 
+	</div>	 
+</header>
+<div class="logo_href-mob" style="position:absolute; top:10px; left:10px; width:120px; height:120px; z-index: 10;" (click)="transfer()"></div>
+<div class="header-mob" [class.invisible]="visibility">
+	<ul class="navbar-mob">
+		<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
+		<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
+		<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
+		<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
+		<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
+	</ul> 
+</div>
+<main class="main">
+	<app-description id="home"></app-description>
+	<app-products id="products"></app-products>
+	<app-souces id="souces"></app-souces>
+	<app-delivery id="pay"></app-delivery>
+	<app-communications id="contacts"></app-communications>
+	<app-about id="about"></app-about>
+	<app-reviews id="reviews"></app-reviews>
+</main>
+<footer class="footer">
+	<p>© Мануфактура “<span>A.M.STUFF</span>”, 2018.</p>
+</footer>
+
