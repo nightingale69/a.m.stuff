@@ -17,16 +17,39 @@
 		<p class="phone-mob" style="font-size:30px">
 			8(905)547-34-87 
 		</p>
-		<div class="description_text">
+		<!--<div class="description_text">
   	  		<p> 
   	  		  	Cкрутки для транспортировки и хранения поварских ножей. 
 				Натуральная кожа, ручная работа. <br>
 				<span class="to_products--arrow" [ngx-scroll-to]="'products'">▼</span>
   	  		</p>
+		</div>-->
+	</div>
+	<ui-carousel #uiCarousel [infinite]="false" [fade]="true" [autoPlay]='true' [speed]="4000" [arrows]="true" class="fullscreen-bg__video">
+		<ui-carousel-item>
+				  <div class="image_bag">
+						<img src="assets/images/bags/product12_1.jpg" alt="bag1" width="100%">
+			</div>
+		</ui-carousel-item>
+		<ui-carousel-item>
+				  <div class="image_bag">
+						<img src="assets/images/bags/product12_2.jpg" alt="bag2" width="100%">
+			</div>
+		</ui-carousel-item>
+		<ui-carousel-item>
+				  <div class="image_bag">
+						<img src="assets/images/bags/product12_3.jpg" alt="bag3" width="100%">
+			</div>
+		</ui-carousel-item>
+		<div class="left-arrow" (click)="uiCarousel.prev()">
+			<img src="assets/images/bags/arrow_left.png" alt="">
 		</div>
-  	</div>
-  	<video loop autoplay muted class="fullscreen-bg__video">
+		<div class="right-arrow" (click)="uiCarousel.next()">
+			<img src="assets/images/bags/arrow_right.png" alt="">
+		</div>
+	</ui-carousel>  
+  	<!--<video loop autoplay muted class="fullscreen-bg__video">
   	  	<source src="assets/video/promo_video.mp4" type="video/mp4">
   	  	<source src="assets/video/promo_video.webm" type="video/webm">
-  	</video>
+  	</video>-->
 </div>
