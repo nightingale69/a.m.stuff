@@ -25,23 +25,14 @@
   	  		</p>
 		</div>-->
 	</div>
-	<ui-carousel #uiCarousel [infinite]="false" [fade]="true" [autoPlay]='true' [speed]="4000" [arrows]="false" class="fullscreen-bg__video">
-		<ui-carousel-item>
-			<div class="image_bag">
-				<img src="assets/images/bags/product12_1.jpg" alt="bag1" width="100%">
-			</div>
-			<title>fjkgkd</title>
-		</ui-carousel-item>
-		<ui-carousel-item>
-			<div class="image_bag">
-				<img src="assets/images/bags/product12_2.jpg" alt="bag2" width="100%">
-			</div>
-		</ui-carousel-item>
-		<ui-carousel-item>
-			<div class="image_bag">
-				<img src="assets/images/bags/product12_3.jpg" alt="bag3" width="100%">
-				<p>fjkgkd</p>
-			</div>
+	<ui-carousel #uiCarousel [infinite]="true" [fade]="true" [autoPlay]='false' [speed]="500" [arrows]="true" class="fullscreen-bg__video">
+		<ui-carousel-item *ngFor="let slide of slides">
+			<a href="https://www.instagram.com/knife.roll/" title="RouterSomething">
+				<div class="image_bag">
+					<img src="{{slide.slideImg}}" alt="slide1" width="100%">
+				</div>
+				<div class="text">{{slide.description}}</div>
+			</a>
 		</ui-carousel-item>
 		<div class="left-arrow" (click)="uiCarousel.prev()">
 			<img src="assets/images/bags/arrow_left.png" alt="">

@@ -9,7 +9,6 @@
 		</div>
 		<ul class="navbar">
 			<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
-			<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
 			<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
 			<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
 			<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
@@ -28,7 +27,8 @@
 </div>
 <main class="main">
 	<app-description id="home"></app-description>
-	<app-products id="products"></app-products>
+	<app-shop id="shop"></app-shop>
+	<!--<app-products id="products"></app-products>-->
 	<app-souces id="souces"></app-souces>
 	<app-delivery id="pay"></app-delivery>
 	<app-communications id="contacts"></app-communications>

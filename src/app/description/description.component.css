@@ -1,9 +1,7 @@
 .content__description {
     overflow: hidden;
-    z-index: 1;
     position: relative;
     width: 100%;
-    height: 100vh;
 }
  
 .logo_stuff_mob {
@@ -11,14 +9,17 @@
 }
 
 .fullscreen-bg__video {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     min-width: 100%;
-	min-height: 100%;
+	min-height: 800px;
 	width: auto;
-	height: auto;
-    z-index: 0;
+    z-index: 1;
+}
+
+ui-carousel-item:hover {
+    cursor: pointer;
 }
  
 .description_site__logo {
@@ -27,7 +28,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
     z-index: 2;
 }
 
@@ -118,6 +118,16 @@
     cursor: pointer;
 }
 
+.text{
+    position: absolute;
+    width: 100%;
+    top: 295px;
+    left: 0;
+    text-align: center;
+    
+    font-size: 40px;
+    color: #fff;
+}
 
 @media screen and (max-width: 830px) {
     .fullscreen-bg__video {
