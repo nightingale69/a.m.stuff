@@ -8,9 +8,10 @@
     height: 220px;
     z-index: 100;
     background-image: url(/assets/images/background_forest.jpg);
-    background-repeat: repeat;
-    background-size: 10% 100%;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
 }
 
 .container__wrapper_logo {
@@ -95,12 +96,7 @@ li p:hover {
 }
 
 .main {
-    background-color: #353535;
-    background-image: url("/assets/images/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: 35%;
+    background-color: #ffffff;
     text-align: center;
     z-index: 1;
 }

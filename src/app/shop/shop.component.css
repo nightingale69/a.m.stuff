@@ -1,4 +1,48 @@
 .shop {
-    height: 400px;
-    background-color: wheat;
+    position: relative;
+    height: auto;
+    z-index: 10;
+}
+
+.shop_twists {
+    display: inline-block;
+    width: 30%;
+    height: 600px;
+    background-color: green
+}
+
+.container_shop {
+    display: inline-block;
+    width: 60%;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black  
+}
+
+.shop_wallets {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: yellow
+}
+
+.shop_belts {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: red
+}
+
+.shop_covers {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: blue
+}
+
+.shop_bags {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: purple
 }
