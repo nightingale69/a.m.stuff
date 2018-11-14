@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { UICarouselModule } from "ui-carousel";
 
@@ -13,6 +14,12 @@ import { CommunicationsComponent } from './communications/communications.compone
 import { SoucesComponent } from './souces/souces.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ShopComponent } from './shop/shop.component';
+
+
+const appRoutes: Routes = [
+	{ path: 'products', component: ProductsComponent },
+	{ path: 'about',      component: AboutComponent }
+  ];
 
 @NgModule({
   	declarations: [
@@ -29,6 +36,10 @@ import { ShopComponent } from './shop/shop.component';
   	imports: [
     	BrowserModule,
 		ReactiveFormsModule,
+		RouterModule.forRoot(
+			appRoutes,
+			{ enableTracing: true } // <-- debugging purposes only
+		),
 		ScrollToModule.forRoot(),
 		UICarouselModule
   	],
