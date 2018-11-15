@@ -25,11 +25,12 @@
   	  		</p>
 		</div>
 	</div>-->
+
 	<ui-carousel #uiCarousel [infinite]="true" [fade]="false" [autoPlay]='false' [speed]="2000" [arrows]="true" class="fullscreen-bg__video">
-		<ui-carousel-item *ngFor="let slide of slides">
+		<ui-carousel-item *ngFor="let slide of slides" height="200px">
 			<a href="https://www.instagram.com/knife.roll/" title="RouterSomething">
 				<div class="image_bag">
-					<img src="{{slide.slideImg}}" alt="slide1" width="100%">
+					<img src="{{slide.slideImg}}" alt="slide1" width="100%" draggable="false" style="margin-top: -50px">
 				</div>
 				<div class="text">{{slide.description}}</div>
 			</a>
@@ -40,9 +41,46 @@
 		<div class="right-arrow" (click)="uiCarousel.next()">
 			<img src="assets/images/bags/arrow_right.png" alt="">
 		</div>
-	</ui-carousel>  
+	</ui-carousel>
+
   	<!--<video loop autoplay muted class="fullscreen-bg__video">
   	  	<source src="assets/video/promo_video.mp4" type="video/mp4">
   	  	<source src="assets/video/promo_video.webm" type="video/webm">
-  	</video>-->
+	  </video>-->
+	  
+
+
+
+
+
+	  <!--<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
+		<ngu-tile *nguCarouselDef="let item; let i = index">
+	   
+		  <ngu-carousel #myCarousel [inputs]="carouselTile" (carouselLoad)="carouselTileLoad(i)" [dataSource]="carouselTiles[i]">
+			<ngu-tile *nguCarouselDef="let item; let j = index">
+			  <div class="tile" [style.background]="'url(' + item + ')'" style="min-height: 200px">
+				<h1>{{j}}</h1>
+			  </div>
+			</ngu-tile>
+			<button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+			<button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+			<ul class="myPoint" NguCarouselPoint>
+			  <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"
+				[style.background]="'url(' + carouselTileItems[j] + ')'"></li>
+			</ul>
+		  </ngu-carousel>
+	   
+		</ngu-tile>
+		<button NguCarouselPrev class="leftRs" [style.opacity]="myCarousel.isFirst ? 0.5:1">&lt;</button>
+		<button NguCarouselNext class="rightRs" [style.opacity]="myCarousel.isLast ? 0.5:1">&gt;</button>
+		<ul class="myPoint" NguCarouselPoint>
+		  <li *ngFor="let i of myCarousel.pointNumbers; let i = index" [class.active]="i==myCarousel.activePoint" (click)="myCarousel.moveTo(i)"
+			[style.background]="'url(' + carouselTileItems[i] + ')'"></li>
+		</ul>
+	  </ngu-carousel>-->
+
+
+
+
+
 </div>

@@ -7,7 +7,7 @@
 	</p>
   	<div class="products__bag" *ngFor="let bag of products_bags">
 		<div class="product_bag--block bag-gallery">
-			<ui-carousel #uiCarousel [infinite]="false" [fade]="true" [autoPlay]='true' [speed]="400" [arrows]="false" class="carousel-pc">
+			<ui-carousel #uiCarousel [infinite]="false" [fade]="true" [autoPlay]='false' [speed]="400" [arrows]="false" class="carousel-pc">
 				<ui-carousel-item>
   	  	  			<div class="image_bag">
   	  	  			  	<img src="{{bag.image1}}" alt="bag1">

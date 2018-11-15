@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { UICarouselModule } from "ui-carousel";
+import { NguCarouselModule } from '@ngu/carousel';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -19,6 +20,7 @@ import { HomeCommonComponent } from './home/home_common/home-common.component';
 
 
 const appRoutes: Routes = [
+	{ path: '', component: HomeCommonComponent },
 	{ path: 'home', component: HomeCommonComponent },
 	{ path: 'products', component: ProductsComponent },
 	{ path: 'delivery', component: DeliveryComponent },
@@ -48,7 +50,8 @@ const appRoutes: Routes = [
 			{ enableTracing: true } // <-- debugging purposes only
 		),
 		ScrollToModule.forRoot(),
-		UICarouselModule
+		UICarouselModule,
+		NguCarouselModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]

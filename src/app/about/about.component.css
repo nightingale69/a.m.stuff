@@ -29,6 +29,11 @@
     border: 2px dashed white; 
 }
 
+.map {
+    position: relative;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 800px) {
     .about-block { 
         width: 90%;

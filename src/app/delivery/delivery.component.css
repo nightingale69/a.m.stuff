@@ -7,16 +7,6 @@
     z-index: 10;
 }
 
-.content__getting:before {
-    content: "";
-    position: absolute;
-    left: 10%;
-    bottom: 0;
-    height: 1px;
-    width: 80%;
-    border-top: 1px solid white;
-}
-
 .getting-payment--container {
     width: 100%;
     display: inline-block;

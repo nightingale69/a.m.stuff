@@ -4,118 +4,15 @@
     z-index: 10;
     width: 100%;
 }
- 
-.logo_stuff_mob {
-    display: none;
-}
 
 .fullscreen-bg__video {
     position: relative;
     top: 0;
     left: 0;
-    min-width: 100%;
-	min-height: 690px;
-	width: auto;
     z-index: 1;
 }
 
 ui-carousel-item:hover {
-    cursor: pointer;
-}
- 
-.description_site__logo {
-    background: rgba(0,0,0,0.6);
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-}
-
-.description_site__logo h2 {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    padding: 18px 0 18px 10px;
-    background-image: url("/assets/images/background.jpg");
-    background-repeat: repeat;
-    background-size: 100%;
-    font-family: 'LeArchitect', 'arial', sans-serif;
-    font-size: 50px;
-    letter-spacing: 3px;
-    color: white;
-    text-decoration: underline;
-}
-
-.flash {
-    position: absolute;
-    top: 40px;
-    right: 33px;
-    width: 4px;
-    height: 4px;
-    transition: box-shadow 0.2s 0s ease;
-    border-radius: 50px;
-    z-index: 3;
-}
-
-.instagram:hover .flash {
-    background-color: white;
-    box-shadow: 0px 0px 30px 20px rgb(255, 255, 255);
-}
-
-.vk img {
-    position: absolute; 
-    margin-top: 25px; 
-    right: 80px; 
-    z-index: 3;
-    transition: transform 0.2s 0s ease;
-}
-
-.vk:hover img {
-    transform: rotate(45deg);
-}
-
-.phone {
-    position: absolute;
-    margin-top: 30px; 
-    right: 150px; 
-    height: 30px; 
-    z-index: 3;
-}
-
-.phone-mob {
-    position: absolute;
-    display: none;
-    margin-top: 75px; 
-    left: 127px; 
-    height: 30px; 
-    z-index: 3; 
-}
-
-.content__description p {
-    color: #ffffff;
-    font-size: 50px;
-    letter-spacing: 3px;
-}
-
-.description_text {
-    display: table;
-    width: 100%;
-    height: 100vh;
-}
-
-.description_text p {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.content__description a {
-    color: #bf3211;
-    text-decoration: none;
-}
-
-.to_products--arrow {
-    text-shadow: 0px 0px 10px #bf3211;  
     cursor: pointer;
 }
 
@@ -128,53 +25,4 @@ ui-carousel-item:hover {
     
     font-size: 40px;
     color: #fff;
-}
-
-@media screen and (max-width: 830px) {
-    .fullscreen-bg__video {
-        display: none;
-    }
-
-    .phone {
-        display: none
-    }
-
-    .phone-mob {
-        display: block; 
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .description_text p { 
-        font-size: 45px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .logo_stuff_mob {
-        display: block;
-    }
-
-    .description_site__logo h2 {
-        height: 110px;
-        font-size: 50px;
-        padding-left: 130px;
-    }
-
-    .vk img {
-        width: 100px;
-        height: 100px;
-        margin-top: 22px;
-        right: 140px;
-    }
-
-    .instagram img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .flash {
-        top: 55px;
-        right: 48px;
-    }
 }

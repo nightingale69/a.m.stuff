@@ -76,10 +76,16 @@ li {
 }
 li p {
     transition: color 0.5s 0s ease;
+    border: 0;
+    outline: 0;
 }
 li p:hover {
-    color: rgb(155, 155, 155);
+    color: rgb(0, 255, 106);
     cursor: pointer;
+}
+
+.active {
+    color: rgb(0, 255, 106);
 }
 
 .description_site__container h2 {

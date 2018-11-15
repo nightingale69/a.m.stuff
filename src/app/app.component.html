@@ -29,7 +29,7 @@
 				z-index: 100;"></div>
 				<div class="description_site__container">
 					<div class="container__wrapper_logo">
-						<div [ngx-scroll-to]="'home'" class="logo_a" style="cursor: pointer">
+						<div routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo_a" style="cursor: pointer">
 							<img style="position: absolute; top: 15px; left: 114px;" src="assets/images/description/logo.png" width="80px" height="80px" alt="logo">
 							<div class="eyes">
 								<div class="left_eye"></div>
@@ -51,24 +51,15 @@
 								<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
 							</a>
 						</li>
-						<li><p routerLink="/about" routerLinkActive="active">о нас</p></li>
-						<li><p routerLink="/communication" routerLinkActive="active">связь</p></li>
-						<li><p routerLink="/delivery" routerLinkActive="active">купить</p></li>
-						<li><p routerLink="/products" routerLinkActive="active">изделия</p></li>
-						<li><p routerLink="/home" routerLinkActive="active">главная</p></li>
+						<li><p routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">о нас</p></li>
+						<li><p routerLink="/communication" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">связь</p></li>
+						<li><p routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">купить</p></li>
+						<li><p routerLink="/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">изделия</p></li>
+						<li><p routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">главная</p></li>
 					</ul>
 				</div>	 
 			</div>
-	<!--<app-description id="home"></app-description>
-	<app-shop id="shop"></app-shop>
-	<app-social id="social"></app-social>-->
 	<router-outlet></router-outlet>
-	<!--<app-products id="products"></app-products>-->
-	<!--<app-souces id="souces"></app-souces>-->
-	<!--<app-delivery id="pay"></app-delivery>-->
-	<!--<app-communications id="contacts"></app-communications>-->
-	<!--<app-about id="about"></app-about>-->
-	<!--<app-reviews id="reviews"></app-reviews>-->
 </main>
 <footer class="footer">
 	<p>© Мануфактура “<span>A.M.STUFF</span>”, 2018.</p>
