@@ -7,19 +7,24 @@ import { UICarouselModule } from "ui-carousel";
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
-import { DescriptionComponent } from './description/description.component';
+import { DescriptionComponent } from './home/home_description/description.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { AboutComponent } from './about/about.component';
 import { CommunicationsComponent } from './communications/communications.component';
 import { SoucesComponent } from './souces/souces.component';
 import { ReviewsComponent } from './reviews/reviews.component';
-import { ShopComponent } from './shop/shop.component';
+import { ShopComponent } from './home/home_shop_menu/shop.component';
+import { SocialComponent } from './home/home_social/social.component';
+import { HomeCommonComponent } from './home/home_common/home-common.component';
 
 
 const appRoutes: Routes = [
+	{ path: 'home', component: HomeCommonComponent },
 	{ path: 'products', component: ProductsComponent },
+	{ path: 'delivery', component: DeliveryComponent },
+	{ path: 'communication', component: CommunicationsComponent },
 	{ path: 'about',      component: AboutComponent }
-  ];
+];
 
 @NgModule({
   	declarations: [
@@ -31,7 +36,9 @@ const appRoutes: Routes = [
   	  	CommunicationsComponent,
   	  	SoucesComponent,
 		ReviewsComponent,
-		ShopComponent
+		ShopComponent,
+		SocialComponent,
+		HomeCommonComponent
   	],
   	imports: [
     	BrowserModule,

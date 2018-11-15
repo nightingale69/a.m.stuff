@@ -40,48 +40,35 @@
 					</div>
 				</div>
 				<div class="sticky">
-						<ul class="navbar">
-							<li>
-								<a class="vk" href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">
-									<img src="assets/images/description/vk_icon.png" width="30px" height="30px" alt="vk">
-								</a>
-							</li>
-							<li>
-								<a class="instagram" href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">
-									<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
-								</a>
-							</li>
-							<li><p [ngx-scroll-to]="'about'">о нас</p></li>
-							<li><p [ngx-scroll-to]="'contacts'">связь</p></li>
-							<li><p [ngx-scroll-to]="'pay'">купить</p></li>
-							<li><p [ngx-scroll-to]="'products'">изделия</p></li>
-							<li><p>главная</p></li>
-						</ul>
-					</div>
-				<!--<div style="position: fixed; width: 80px; height: 100%; z-index: 20; text-align: center" class="menu">
-					<div [ngx-scroll-to]="'home'" class="logo_a" style="cursor: pointer">
-						<img style="position: relative; margin-top: 10px" src="assets/images/description/logo.png" width="80px" height="80px" alt="logo">
-						<div class="eyes">
-							<div class="left_eye"></div>
-							<div class="right_eye"></div>
-						</div>
-					</div>
 					<ul class="navbar">
-						<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
-						<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
-						<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
-						<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
-					</ul> 
-				</div>-->	 
+						<li>
+							<a class="vk" href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">
+								<img src="assets/images/description/vk_icon.png" width="30px" height="30px" alt="vk">
+							</a>
+						</li>
+						<li>
+							<a class="instagram" href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">
+								<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
+							</a>
+						</li>
+						<li><p routerLink="/about" routerLinkActive="active">о нас</p></li>
+						<li><p routerLink="/communication" routerLinkActive="active">связь</p></li>
+						<li><p routerLink="/delivery" routerLinkActive="active">купить</p></li>
+						<li><p routerLink="/products" routerLinkActive="active">изделия</p></li>
+						<li><p routerLink="/home" routerLinkActive="active">главная</p></li>
+					</ul>
+				</div>	 
 			</div>
-	<app-description id="home"></app-description>
+	<!--<app-description id="home"></app-description>
 	<app-shop id="shop"></app-shop>
+	<app-social id="social"></app-social>-->
+	<router-outlet></router-outlet>
 	<!--<app-products id="products"></app-products>-->
-	<app-souces id="souces"></app-souces>
-	<app-delivery id="pay"></app-delivery>
-	<app-communications id="contacts"></app-communications>
-	<app-about id="about"></app-about>
-	<app-reviews id="reviews"></app-reviews>
+	<!--<app-souces id="souces"></app-souces>-->
+	<!--<app-delivery id="pay"></app-delivery>-->
+	<!--<app-communications id="contacts"></app-communications>-->
+	<!--<app-about id="about"></app-about>-->
+	<!--<app-reviews id="reviews"></app-reviews>-->
 </main>
 <footer class="footer">
 	<p>© Мануфактура “<span>A.M.STUFF</span>”, 2018.</p>
