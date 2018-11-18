@@ -19,3 +19,22 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d71798.23005039954!2d38.43030120605468!3d55.781174272105766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414adc22a69168b7%3A0x31a014be3698f0c9!2z0K3Qu9C10LrRgtGA0L7RgdGC0LDQu9GMLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1542300407869" width="90%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </div>
+
+<div class="content__reviews reviews">
+	<h1 style="font-size: 50px; margin-bottom: 30px">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
+  	<div class="reviews__item" *ngFor="let review of reviews">
+  	  	<div class="reviews__item--block photo-gallery">
+  	  	  	<div class="image_photo">
+  	  	  	  	<img src="{{review.photo}}" alt="photo">
+  	  	  	</div>
+  	  	</div>
+  	  	<div class="product_review--block description_review">
+			<p style="padding: 10px 0 10px 0; text-align: center">
+				{{ review.name }}
+			</p>
+  	  	  	<q><i>
+  	  	  	  	{{ review.description }}
+			</i></q>
+		</div>	
+  	</div>
+</div>
