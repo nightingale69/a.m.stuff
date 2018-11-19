@@ -1,0 +1,4 @@
+ngx-gallery .ngx-gallery-arrow::deep {
+    position: relative;
+    background-color: black
+}

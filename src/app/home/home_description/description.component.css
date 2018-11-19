@@ -16,13 +16,21 @@ ui-carousel-item:hover {
     cursor: pointer;
 }
 
-.text{
+.slide {
     position: absolute;
     width: 100%;
-    top: 295px;
+    height: 650px;
+    top: 0;
     left: 0;
     text-align: center;
-    
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
     font-size: 40px;
     color: #fff;
+}
+
+.slide p {
+    margin-top: 18%;
 }

@@ -26,13 +26,15 @@
 		</div>
 	</div>-->
 
-	<ui-carousel #uiCarousel [infinite]="true" [fade]="false" [autoPlay]='false' [speed]="2000" [arrows]="true" class="fullscreen-bg__video">
+	<ui-carousel #uiCarousel [infinite]="true" [fade]="false" [autoPlay]='false' [speed]="2000" [arrows]="true" width=100% height="650px" class="fullscreen-bg__video">
 		<ui-carousel-item *ngFor="let slide of slides" height="200px">
 			<a href="https://www.instagram.com/knife.roll/" title="RouterSomething">
-				<div class="image_bag">
-					<img src="{{slide.slideImg}}" alt="slide1" width="100%" draggable="false" style="margin-top: -50px">
+				<!--<div class="image_bag">
+					<img src="{{slide.slideImg}}" alt="slide1" width="auto" draggable="false" style="margin-top: -50px">
+				</div>-->
+				<div class="slide" [style.backgroundImage]="'url('+ slide.slideImg +')'">
+					<p>{{slide.description}}</p>
 				</div>
-				<div class="text">{{slide.description}}</div>
 			</a>
 		</ui-carousel-item>
 		<div class="left-arrow" (click)="uiCarousel.prev()">

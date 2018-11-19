@@ -5,7 +5,6 @@
 
 .shop > div {
     padding: 1em;
-    color: white;
     opacity: 1;
     outline: 2px solid rgba(255,255,255,1);
     outline-offset: 0px;
@@ -22,6 +21,12 @@
     grid-gap: 10px;
     grid-auto-rows: minmax(30%, 300px);
     padding: 60px;
+}
+
+.shop p {
+    color: white;
+    margin-top: 100px;
+    font-size: 40px; 
 }
 
 .shop_twists {
