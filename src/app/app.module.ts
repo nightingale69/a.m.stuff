@@ -15,20 +15,32 @@ import { SoucesComponent } from './souces/souces.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ShopComponent } from './home/home_shop_menu/shop.component';
 import { SocialComponent } from './home/home_social/social.component';
-import { ProductsCommonComponent } from './products/products-common/products-common.component';
+import { ProductsCommonComponent } from './products/products-common.component';
+import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 import { TwistsComponent } from './products/products_twists/twists.component';
 import { WalletsComponent } from './products/products_wallets/wallets.component';
 import { BeltsComponent } from './products/products_belts/belts.component';
 import { CoversComponent } from './products/products_covers/covers.component';
 import { BagsComponent } from './products/products_bags/bags.component';
 
+/*import { ProductsModule } from './products/products.module';*/
+
 
 const appRoutes: Routes = [
 	{ path: '', component: HomeCommonComponent },
-	{ path: 'products', component: ProductsCommonComponent },
+	{ path: 'products', component: ProductsCommonComponent, children: 
+	  [
+		{ path: 'twists', component: TwistsComponent },
+		{ path: 'wallets', component: WalletsComponent },
+		{ path: 'belts', component: BeltsComponent },
+		{ path: 'covers', component: CoversComponent },
+		{ path: 'bags', component: BagsComponent }
+	  ] 
+	},
 	{ path: 'delivery', component: DeliveryComponent },
 	{ path: 'communication', component: CommunicationsComponent },
-	{ path: 'about', component: AboutComponent }
+	{ path: 'about', component: AboutComponent },
+	{ path: '**', component: NotFoundComponentComponent }
 ];
 
 @NgModule({
@@ -43,8 +55,9 @@ const appRoutes: Routes = [
 		ShopComponent,
 		SocialComponent,
 		HomeCommonComponent,
-		TwistsComponent,
 		ProductsCommonComponent,
+		NotFoundComponentComponent,
+		TwistsComponent,
 		WalletsComponent,
 		BagsComponent,
 		BeltsComponent,

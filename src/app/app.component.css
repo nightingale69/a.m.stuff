@@ -69,7 +69,7 @@
 li {
     float: right;
     height: 30px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     margin: 0 10px 0 10px;
     color: rgb(247, 247, 247);
@@ -80,12 +80,14 @@ li p {
     outline: 0;
 }
 li p:hover {
-    color: rgb(0, 255, 106);
+    color: rgb(136, 136, 136);
+    text-decoration: underline;
     cursor: pointer;
 }
 
 .active {
-    color: rgb(0, 255, 106);
+    color: rgb(136, 136, 136);
+    text-decoration: underline;
 }
 
 .description_site__container h2 {
