@@ -50,13 +50,6 @@ export class TwistsComponent {
   	    description: 'Для 18 поварских ножей / инструментов', 
   	    price: '15000 ₽'
   	  },
-  	  {
-  	    image1: "assets/images/bags/product8_1.jpg",
-  	    image2: "assets/images/bags/product8_2.jpg",
-  	    image3: "assets/images/bags/product8_3.jpg",
-  	    description: 'Ремень для доводки, правки, заточки ножей и бритв', 
-  	    price: '1400 ₽'
-  	  },
   	  /*{
   	    image1: "assets/images/bags/product2_1.jpg",
   	    image2: "assets/images/bags/product2_2.jpg",

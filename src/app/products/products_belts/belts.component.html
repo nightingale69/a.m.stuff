@@ -1,3 +1,13 @@
-<p>
-  belts works!
-</p>
+<div class="belts">
+    <div class="belts_block block" *ngFor="let belt of belts">
+        <div class="block_image">
+            <img src="{{belt.image1}}" alt="twist">
+        </div>
+        <div class="block_text">
+            <p>{{belt.description}}</p>
+        </div>
+        <div class="block_price">
+            <p style="color:green">{{belt.price}}</p>
+        </div>
+    </div>
+</div>

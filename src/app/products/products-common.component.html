@@ -1,7 +1,4 @@
 <div class="products-common">
-    <div class="shop_block--content shop_block">
-        <router-outlet></router-outlet>
-    </div>
     <div class="shop_block--menu shop_block">
         <ul>
             <li><p routerLink="/products/twists" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">СКРУТКИ</p></li>
@@ -10,5 +7,8 @@
             <li><p routerLink="/products/wallets" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">КОШЕЛЬКИ</p></li>
             <li><p routerLink="/products/covers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">КЕЙСЫ</p></li>
         </ul>
+    </div>
+    <div class="shop_block--content shop_block">
+        <router-outlet></router-outlet>
     </div>
 </div>

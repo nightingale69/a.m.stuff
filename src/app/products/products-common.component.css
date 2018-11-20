@@ -1,21 +1,52 @@
 .products-common {
+    position: relative;
     width: 100%;
     height: 100%;
-    padding-left: 60px;
+    min-height: 600px;
 }
 
 .shop_block {
-    display: inline-block;
+    display: block;
 }
 
 .shop_block--menu {
+    position: sticky;
     width: 200px;
     height: 100%;
-    top: 250px;
-    right: 0;
-    z-index: 2;
+    margin-top: 30px;
+    top: 100px;
+    left: 10px;
+    float: left;
+    z-index: 10;
+}
+
+.shop_block--menu li {
+    background-color: #eee;
+    display: block;
+    transition: background-color 1s 0s ease;
+}
+
+.shop_block--menu p,
+.shop_block--menu a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 0;
+    outline: 0;
+}
+
+.shop_block--menu li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(95, 95, 95);
+    color: white;
 }
 
 .shop_block--content {
-    width: 100%;
+    padding-left: 222px;
 }

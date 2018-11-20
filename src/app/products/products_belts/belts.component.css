@@ -1,0 +1,14 @@
+.belts {
+    text-align: left;
+}
+
+.belts_block {
+    display: inline-block;
+    width: 400px;
+    margin: 30px 20px 0 0;
+    text-align: center
+}
+
+img {
+    width: 400px;
+}
