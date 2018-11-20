@@ -1,4 +1,15 @@
-ngx-gallery .ngx-gallery-arrow::deep {
-    position: relative;
-    background-color: black
+.twists {
+    width: 90%;
+    text-align: left
+}
+
+.twists_block {
+    display: inline-block;
+    width: 500px;
+    margin: 30px 20px 0 0;
+    text-align: center
+}
+
+img {
+    width: 500px;
 }
