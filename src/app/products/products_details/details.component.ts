@@ -7,7 +7,4 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DetailsComponent {
 
-  @Input() name: string;
-  @Input() price: number;
-
 }

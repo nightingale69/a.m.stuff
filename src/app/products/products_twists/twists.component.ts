@@ -87,5 +87,4 @@ export class TwistsComponent {
   	    price: '6900 руб.'
   	  },*/
 	];
-
 }
