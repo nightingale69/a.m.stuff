@@ -9,6 +9,7 @@ export class TwistsComponent {
 	twists = 
   	[
   	  {
+		url: "5knifes",
   	    image1: "assets/images/bags/product12_1.jpg",
   	    image2: "assets/images/bags/product12_2.jpg",
   	    image3: "assets/images/bags/product12_3.jpg",

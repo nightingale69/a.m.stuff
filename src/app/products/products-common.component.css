@@ -37,13 +37,15 @@
     outline: 0;
 }
 
-.shop_block--menu li:hover {
-    background-color: #ccc;
+.shop_block--menu li:hover,
+.shop_block--menu li:hover p {
+    background-color: rgb(156, 156, 156);
     cursor: pointer;
+    color: white;
 }
 
 .active {
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(156, 156, 156);
     color: white;
 }
 
