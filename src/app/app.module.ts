@@ -35,13 +35,13 @@ const appRoutes: Routes = [
 		{ path: 'wallets', component: WalletsComponent },
 		{ path: 'belts', component: BeltsComponent },
 		{ path: 'covers', component: CoversComponent },
-		{ path: 'bags', component: BagsComponent },
-		{ path: ':details', component: DetailsComponent }
+		{ path: 'bags', component: BagsComponent }
 	  ] 
 	},
 	{ path: 'delivery', component: DeliveryComponent },
 	{ path: 'communication', component: CommunicationsComponent },
 	{ path: 'about', component: AboutComponent },
+	{ path: 'products/:details', component: DetailsComponent },
 	{ path: '**', component: NotFoundComponentComponent }
 ];
 

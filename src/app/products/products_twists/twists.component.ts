@@ -17,6 +17,7 @@ export class TwistsComponent {
   	    price: '6000 ₽'
   	  },
   	  {
+		url: "6knifes",
   	    image1: "assets/images/bags/product4_1.jpg",
   	    image2: "assets/images/bags/product4_2.jpg",
   	    image3: "assets/images/bags/product4_3.jpg",
@@ -24,6 +25,7 @@ export class TwistsComponent {
   	    price: '6500 ₽'
   	  },
   	  {
+		url: "7knifes",
   	    image1: "assets/images/bags/product11_1.jpg",
   	    image2: "assets/images/bags/product11_2.jpg",
   	    image3: "assets/images/bags/product11_3.jpg",
@@ -31,6 +33,7 @@ export class TwistsComponent {
   	    price: '5000 ₽'
   	  },
   	  {
+		url: "10knifes",
   	    image1: "assets/images/bags/product9_1.jpg",
   	    image2: "assets/images/bags/product9_2.jpg",
   	    image3: "assets/images/bags/product9_3.jpg",
@@ -38,6 +41,7 @@ export class TwistsComponent {
   	    price: '6900 ₽'
   	  },
   	  {
+		url: "13knifes",
   	    image1:  "assets/images/bags/product1_1.jpg",
   	    image2:  "assets/images/bags/product1_2.jpg",
   	    image3:  "assets/images/bags/product1_3.jpg",
@@ -45,6 +49,7 @@ export class TwistsComponent {
   	    price: '8900 ₽'
   	  },
   	  {
+		url: "18knifes",
   	    image1: "assets/images/bags/product10_1.jpg",
   	    image2: "assets/images/bags/product10_2.jpg",
   	    image3: "assets/images/bags/product10_3.jpg",
