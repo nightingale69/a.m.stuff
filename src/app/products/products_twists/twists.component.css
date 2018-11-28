@@ -17,3 +17,25 @@
 img {
     width: 400px;
 }
+
+.twists_block img:first-child {
+    position: relative;
+    opacity: 1;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -50px;
+    transition: opacity 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in;
+    z-index: 10; 
+}
+
+.twists_block:hover img:first-child {
+    opacity: 0;
+    outline-offset: -10px;
+    cursor: pointer;
+}
+
+img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9; 
+}

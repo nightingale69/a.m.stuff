@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   	selector: 'app-twists',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   	styleUrls: ['./twists.component.css']
 })
 export class TwistsComponent {
+
 	twists = 
   	[
   	  {
