@@ -2,8 +2,10 @@
     <div class="twists_block block block_product" *ngFor="let item of twists">
         <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
             <div class="block_image">
-                <img src="{{item.image1}}" alt="twist">
-                <img src="{{item.image2}}" alt="twist">
+                <img src="{{item.image1}}" alt="twist1" class="asas">
+                <div class="block_image_background">
+                    <img src="{{item.image2}}" alt="twist2">
+                </div>
             </div>
             <div class="block_text">
                 <p>{{item.description}}</p>

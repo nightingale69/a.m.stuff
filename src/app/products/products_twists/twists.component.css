@@ -6,8 +6,10 @@
 .twists_block {
     display: inline-block;
     width: 400px;
-    margin: 30px 20px 0 0;
-    text-align: center
+    margin: 10px 0px 10px 20px;
+    text-align: center;
+    border: 0;
+    outline: 0;
 }
 
 .twists_block:hover {
@@ -18,22 +20,26 @@ img {
     width: 400px;
 }
 
-.twists_block img:first-child {
+.block_image {
+    position: relative;
+}
+
+.block_image .asas {
     position: relative;
     opacity: 1;
-    outline: 2px solid rgb(255, 255, 255);
-    outline-offset: -50px;
+    /*outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -0px;*/
     transition: opacity 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in;
     z-index: 10; 
 }
 
-.twists_block:hover img:first-child {
+.twists_block:hover .asas {
     opacity: 0;
-    outline-offset: -10px;
+    /*outline-offset: -10px;*/
     cursor: pointer;
 }
 
-img:nth-child(2) {
+.block_image_background {
     position: absolute;
     top: 0;
     left: 0;

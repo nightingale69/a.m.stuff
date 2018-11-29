@@ -24,6 +24,7 @@ import { CoversComponent } from './products/products_covers/covers.component';
 import { BagsComponent } from './products/products_bags/bags.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 
+import { NguCarouselModule } from '@ngu/carousel';
 /*import { ProductsModule } from './products/products.module';*/
 
 
@@ -74,7 +75,8 @@ const appRoutes: Routes = [
 			{ enableTracing: true } // <-- debugging purposes only
 		),
 		ScrollToModule.forRoot(),
-		UICarouselModule
+		UICarouselModule,
+		NguCarouselModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]
