@@ -1,5 +1,9 @@
 .social {
     position: relative;
     z-index: 10;
-    height: 1500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px; 
 }
+
+

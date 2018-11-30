@@ -1,47 +1,15 @@
 <div class="social">
-  	<div class="social_channel">
-        <iframe width="70%" height="800px" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
+	<h1 class="social_title">Наш инстаграм</h1>
+	<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
+	<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
+		<ngu-tile *nguCarouselDef="let item; let i = index">
+		  	<div class="tile" [style.backgroundImage]="'url(' + item.image + ')'" style="background-size: cover; height: 200px">
+				<!--<a href="{{item.url}}" target="_blank">--><h1 style="color: white; height: 200px">{{item.text}}</h1><!--</a>-->
+		  	</div>
+		</ngu-tile>
+	</ngu-carousel>
+
+    <div class="social_channel">
+        <iframe width="70%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
     </div>
-
-    
-    
-
-
-    <!--<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
-        <ngu-tile *nguCarouselDef="let item; let i = index">
-            <div class="tile" style="min-height: 100px" *ngFor="let item of twists">
-                <img src="{{item.image1}}" alt="" height="100px">
-            </div>
-        </ngu-tile>
-        https://www.npmjs.com/package/@ngu/carousel?activeTab=readme
-    </ngu-carousel>-->
-
-
-
-
-
-
-    <ngu-carousel
-      [inputs]="carouselBanner"
-      (onMove)="onmoveFn($event)">
- 
-          <ngu-item NguCarouselItem class="bannerStyle">
-              <h1>1</h1>
-          </ngu-item>
- 
-          <ngu-item NguCarouselItem class="bannerStyle">
-              <h1>2</h1>
-          </ngu-item>
- 
-          <ngu-item NguCarouselItem class="bannerStyle">
-              <h1>3</h1>
-          </ngu-item>
- 
-          <button NguCarouselPrev class='leftRs'>&lt;</button>
-          <button NguCarouselNext class='rightRs'>&gt;</button>
-    </ngu-carousel>
-
-
-
-
 </div>
