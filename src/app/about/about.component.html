@@ -1,40 +1,22 @@
 <div class="content__about">
-    <h1 style="font-size: 50px; margin-bottom: 30px">О НАС</h1>
+    <h1 style="margin-bottom: 30px">О НАС</h1>
     <div style="text-align:center" class="about_image about-block">
-        <img src="assets/images/about/profile.jpg" width="500px" alt="walden farms">
+        <img src="assets/images/about/profile.jpg" width="600px" alt="walden farms">
     </div>
     <div class="about_description about-block">
-        <q>
+        <q class="about-block_speech">
             Здравствуйте, меня зовут Александр, 
             lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            
         </q>
         <div class="about-block--socials">
         
         </div>
     </div>
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d71798.23005039954!2d38.43030120605468!3d55.781174272105766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414adc22a69168b7%3A0x31a014be3698f0c9!2z0K3Qu9C10LrRgtGA0L7RgdGC0LDQu9GMLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1542300407869" width="80%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="about-block_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d71798.23005039954!2d38.43030120605468!3d55.781174272105766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414adc22a69168b7%3A0x31a014be3698f0c9!2z0K3Qu9C10LrRgtGA0L7RgdGC0LDQu9GMLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1542300407869" width="92%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-</div>
-
-<div class="content__reviews reviews">
-	<h1 style="font-size: 50px; margin-bottom: 30px">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
-  	<div class="reviews__item" *ngFor="let review of reviews">
-  	  	<div class="reviews__item--block photo-gallery">
-  	  	  	<div class="image_photo">
-  	  	  	  	<img src="{{review.photo}}" alt="photo">
-  	  	  	</div>
-  	  	</div>
-  	  	<div class="product_review--block description_review">
-			<p style="padding: 10px 0 10px 0; text-align: center">
-				{{ review.name }}
-			</p>
-  	  	  	<q><i>
-  	  	  	  	{{ review.description }}
-			</i></q>
-		</div>	
-  	</div>
 </div>

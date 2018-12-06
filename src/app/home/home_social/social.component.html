@@ -1,5 +1,5 @@
 <div class="social">
-	<h1 class="social_title">Наш инстаграм</h1>
+	<h1 class="social_title">НАШ ИНСТАГРАМ</h1>
 	<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
 	<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
 		<ngu-tile *nguCarouselDef="let item; let i = index">
@@ -10,6 +10,25 @@
 	</ngu-carousel>
 
     <div class="social_channel">
-        <iframe width="70%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
-    </div>
+        <iframe width="98.5%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="content__reviews reviews">
+		<h1 style="margin-bottom: 30px">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
+		  <div class="reviews__item" *ngFor="let review of reviews">
+				<div class="reviews__item--block photo-gallery">
+					<div class="image_photo">
+						<img src="{{review.photo}}" alt="photo">
+					</div>
+				</div>
+				<div class="product_review--block description_review">
+				<p style="padding: 10px 0 10px 0; text-align: center">
+					{{ review.name }}
+				</p>
+				<q><i>
+					{{ review.description }}
+				</i></q>
+			</div>	
+		  </div>
+	</div>
 </div>
