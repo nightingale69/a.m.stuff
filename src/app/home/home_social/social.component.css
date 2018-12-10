@@ -6,6 +6,33 @@
     padding-bottom: 50px; 
 }
 
+.tile {
+    position: relative;
+}
+
+.tile-hover {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 0px;
+    transition: height 0.3s;
+    background-color: rgba(61, 61, 61, 0.8);
+}
+
+.tile-hover-text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tile:hover .tile-hover {
+    height: 200px;
+    cursor: pointer;
+}
+
+.tile:hover .tile-hover-text {
+    opacity: 1;
+}
 
 /*reviews*/
 .content__reviews {

@@ -2,10 +2,13 @@
 	<h1 class="social_title">НАШ ИНСТАГРАМ</h1>
 	<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
 	<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
-		<ngu-tile *nguCarouselDef="let item; let i = index">
-		  	<div class="tile" [style.backgroundImage]="'url(' + item.image + ')'" style="background-size: cover; height: 200px">
-				<!--<a href="{{item.url}}" target="_blank">--><h1 style="color: white; height: 200px">{{item.text}}</h1><!--</a>-->
-		  	</div>
+		<ngu-tile *nguCarouselDef="let item; let i = index" class="tile">
+		  	<div class="tile-nohover" [style.backgroundImage]="'url(' + item.image + ')'" style="background-size: cover; height: 200px"></div>
+			<div class="tile-hover">
+				<a href="{{item.url}}" target="_blank">
+					<h1 class="tile-hover-text" style="color: white; height: 200px; line-height: 200px">{{item.text}}</h1>
+				</a>
+			</div>
 		</ngu-tile>
 	</ngu-carousel>
 
