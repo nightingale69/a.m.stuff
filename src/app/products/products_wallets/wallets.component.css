@@ -1,0 +1,41 @@
+.wallets {
+    width: 100%;
+    text-align: left
+}
+
+.wallets_block {
+    display: inline-block;
+    width: 300px;
+    margin: 10px 0px 10px 20px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
+.wallets_block:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 300px;
+}
+
+.block_image {
+    position: relative;
+}
+
+.block_image .asas {
+    position: relative;
+    z-index: 10; 
+}
+
+.wallets_block:hover .asas {
+    cursor: pointer;
+}
+
+.block_image_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9; 
+}

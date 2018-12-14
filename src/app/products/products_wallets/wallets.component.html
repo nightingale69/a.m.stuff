@@ -1,3 +1,15 @@
-<p>
-  wallets works!
-</p>
+<div class="wallets">
+  <div class="wallets_block block block_product" *ngFor="let item of wallets">
+      <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
+          <div class="block_image">
+              <img src="{{item.image}}" alt="wallet" class="asas" draggable="false">
+          </div>
+          <div class="block_text">
+              <p>{{item.description}}</p>
+          </div>
+          <div class="block_price">
+              <p style="color:green">{{item.price}}</p>
+          </div>
+      </div>
+  </div>
+</div>
