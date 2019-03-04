@@ -1,0 +1,15 @@
+<div class="toilet-bags">
+  <div class="toilet-bags_block block block_product" *ngFor="let item of toilet_bags">
+      <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
+          <div class="block_image">
+              <img src="{{item.image}}" alt="toilet-bag" class="asas" draggable="false">
+          </div>
+          <div class="block_text">
+              <p>{{item.description}}</p>
+          </div>
+          <div class="block_price">
+              <p style="color:green">{{item.price}}</p>
+          </div>
+      </div>
+  </div>
+</div>

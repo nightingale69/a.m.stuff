@@ -22,6 +22,7 @@ import { WalletsComponent } from './products/products_wallets/wallets.component'
 import { BeltsComponent } from './products/products_belts/belts.component';
 import { CoversComponent } from './products/products_covers/covers.component';
 import { BagsComponent } from './products/products_bags/bags.component';
+import { ToiletBagsComponent } from './products/products_toilet-bags/toilet-bags.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
 		{ path: 'wallets', component: WalletsComponent },
 		{ path: 'belts', component: BeltsComponent },
 		{ path: 'covers', component: CoversComponent },
-		{ path: 'bags', component: BagsComponent }
+		{ path: 'bags', component: BagsComponent },
+		{ path: 'toilet_bags', component: ToiletBagsComponent }
 	  ] 
 	},
 	{ path: 'delivery', component: DeliveryComponent },
@@ -64,6 +66,7 @@ const appRoutes: Routes = [
 		WalletsComponent,
 		BagsComponent,
 		BeltsComponent,
+		ToiletBagsComponent,
 		CoversComponent,
 		DetailsComponent
   	],

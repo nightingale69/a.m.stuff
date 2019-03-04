@@ -39,5 +39,5 @@ export class WalletsComponent {
   	    description: 'Кошелёк коричневый', 
   	    price: '1000 ₽'
   	  }
-	];
+		];
 }
