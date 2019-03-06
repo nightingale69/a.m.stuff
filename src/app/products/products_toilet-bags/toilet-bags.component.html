@@ -1,15 +1,21 @@
 <div class="toilet-bags">
-  <div class="toilet-bags_block block block_product" *ngFor="let item of toilet_bags">
-      <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
-          <div class="block_image">
-              <img src="{{item.image}}" alt="toilet-bag" class="asas" draggable="false">
-          </div>
-          <div class="block_text">
-              <p>{{item.description}}</p>
-          </div>
-          <div class="block_price">
-              <p style="color:green">{{item.price}}</p>
-          </div>
-      </div>
-  </div>
+    <p class="toilet-bags_description">
+        Любите путешествовать или вы тот, кто постоянно в командировках? Тогда это то, что вам нужно! Незаменимый помощник в любой поездке - 
+        кожаный несессер, в который поместятся все ваши аксессуары, средства личной гигиены и электробритва. 
+        Создаст порядок и защитит остальные вещи от протекания шампуня) также это отличное решение для хранения мелочей в повседневной жизни!
+        Функциональный, стильный, эксклюзивный несессер из натуральной кожи не займёт много места, но существенно упростит вашу жизнь.
+    </p>
+    <div class="toilet-bags_block block block_product" *ngFor="let item of toilet_bags">
+        <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
+            <div class="block_image">
+                <img src="{{item.image}}" alt="toilet-bag" class="asas" draggable="false">
+            </div>
+            <div class="block_text">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="block_price">
+                <p style="color:green">{{item.price}}</p>
+            </div>
+        </div>
+    </div>
 </div>

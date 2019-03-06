@@ -6,7 +6,7 @@
 .toilet-bags_block {
     display: inline-block;
     width: 400px;
-    margin: 10px 0px 10px 20px;
+    margin: 0px 20px 20px 0;
     text-align: center;
     border: 0;
     outline: 0;
@@ -30,11 +30,6 @@ img {
     transition: opacity 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in;
     z-index: 10; 
 }
-
-/*.toilet-bags_block:hover .asas {
-    opacity: 0;
-    cursor: pointer;
-}*/
 
 .block_image_background {
     position: absolute;

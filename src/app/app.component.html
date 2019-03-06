@@ -1,64 +1,54 @@
-<!--<div class="logo_href-mob" style="position:absolute; top:10px; left:10px; width:120px; height:120px; z-index: 10;" (click)="transfer()"></div>
-<div class="header-mob" [class.invisible]="visibility">
-	<ul class="navbar-mob">
-		<li><p [ngx-scroll-to]="'products'">ИЗДЕЛИЯ</p></li>
-		<li><p [ngx-scroll-to]="'souces'">СОУСЫ</p></li>
-		<li><p [ngx-scroll-to]="'pay'">КУПИТЬ</p></li>
-		<li><p [ngx-scroll-to]="'contacts'">СВЯЗЬ</p></li>
-		<li><p [ngx-scroll-to]="'about'">О НАС</p></li>
-	</ul> 
-</div>-->
 <main class="main" id="top">
-		<div class="header">
-			<div class="rectangle" style="
-			position: absolute;
-			left: 100px;
-			width: 108px;
-			height: 90px;
-			background-color: black;
-			"></div>
-			<div class="triangle" style="
-			position: absolute;
-			width: 0;
-			height: 0;
-			top: 90px;
-			left: 100px;
-			border-left: 57px solid transparent;
-			border-right: 50px solid transparent;
-			border-top: 22px solid black;
-			z-index: 100;"></div>
-			<div class="description_site__container">
-				<div class="container__wrapper_logo">
-					<div routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo_a" style="cursor: pointer">
-						<img style="position: absolute; top: 15px; left: 114px;" src="assets/images/description/logo.png" width="80px" height="80px" alt="logo">
-						<div class="eyes">
-							<div class="left_eye"></div>
-							<div class="right_eye"></div>
-						</div>
-						<h2 class="logo_title" style="position: absolute; width: auto; top: 10px; left: 210px; font-size: 39px;">a.m.stuff</h2>
+	<div class="header">
+		<div class="rectangle" style="
+		position: absolute;
+		left: 100px;
+		width: 108px;
+		height: 90px;
+		background-color: black;
+		"></div>
+		<div class="triangle" style="
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 90px;
+		left: 100px;
+		border-left: 57px solid transparent;
+		border-right: 50px solid transparent;
+		border-top: 22px solid black;
+		z-index: 100;"></div>
+		<div class="description_site__container">
+			<div class="container__wrapper_logo">
+				<div routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo_a" style="cursor: pointer">
+					<img style="position: absolute; top: 15px; left: 114px;" src="assets/images/description/logo.png" width="80px" height="80px" alt="logo">
+					<div class="eyes">
+						<div class="left_eye"></div>
+						<div class="right_eye"></div>
 					</div>
+					<h2 class="logo_title" style="position: absolute; width: auto; top: 10px; left: 210px; font-size: 39px;">a.m.stuff</h2>
 				</div>
 			</div>
-			<div class="sticky">
-				<ul class="navbar">
-					<!--<li>
-						<a class="vk" href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">
-							<img src="assets/images/description/vk_icon.png" width="30px" height="30px" alt="vk">
-						</a>
-					</li>
-					<li>
-						<a class="instagram" href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">
-							<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
-						</a>
-					</li>-->
-					<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О НАС</p></li>
-					<!--<li><p routerLink="/communication" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">связь</p></li>-->
-					<li><p [ngx-scroll-to]="'top'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ДОСТАВКА И ОПЛАТА</p></li>
-					<li><p [ngx-scroll-to]="'top'" routerLink="/products/twists">ИЗДЕЛИЯ</p></li>
-					<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ГЛАВНАЯ</p></li>
-				</ul>
-			</div>	 
 		</div>
+		<div class="sticky">
+			<ul class="navbar">
+				<!--<li>
+					<a class="vk" href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">
+						<img src="assets/images/description/vk_icon.png" width="30px" height="30px" alt="vk">
+					</a>
+				</li>
+				<li>
+					<a class="instagram" href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">
+						<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
+					</a>
+				</li>-->
+				<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О НАС</p></li>
+				<!--<li><p routerLink="/communication" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">связь</p></li>-->
+				<li><p [ngx-scroll-to]="'top'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ДОСТАВКА И ОПЛАТА</p></li>
+				<li><p [ngx-scroll-to]="'top'" routerLink="/products/twists">ИЗДЕЛИЯ</p></li>
+				<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ГЛАВНАЯ</p></li>
+			</ul>
+		</div>	 
+	</div>
 	<router-outlet></router-outlet>
 </main>
 <footer class="footer">

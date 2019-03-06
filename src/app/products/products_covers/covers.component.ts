@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-covers',
-  templateUrl: './covers.component.html',
-  styleUrls: ['./covers.component.css']
+  	selector: 'app-covers',
+  	templateUrl: './covers.component.html',
+  	styleUrls: ['./covers.component.css']
 })
 export class CoversComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+	public constructor(private titleService: Title ) { }
+	ngOnInit() {
+		this.titleService.setTitle('a.m.stuff - Кейсы');
+	}
 }

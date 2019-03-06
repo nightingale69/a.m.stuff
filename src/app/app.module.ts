@@ -19,7 +19,7 @@ import { ProductsCommonComponent } from './products/products-common.component';
 import { DetailsComponent } from './products/products_details/details.component';
 import { TwistsComponent } from './products/products_twists/twists.component';
 import { WalletsComponent } from './products/products_wallets/wallets.component';
-import { BeltsComponent } from './products/products_belts/belts.component';
+import { DifferentProductsComponent } from './products/products_different/different-products.component';
 import { CoversComponent } from './products/products_covers/covers.component';
 import { BagsComponent } from './products/products_bags/bags.component';
 import { ToiletBagsComponent } from './products/products_toilet-bags/toilet-bags.component';
@@ -35,7 +35,7 @@ const appRoutes: Routes = [
 	  [
 		{ path: 'twists', component: TwistsComponent },
 		{ path: 'wallets', component: WalletsComponent },
-		{ path: 'belts', component: BeltsComponent },
+		{ path: 'different', component: DifferentProductsComponent },
 		{ path: 'covers', component: CoversComponent },
 		{ path: 'bags', component: BagsComponent },
 		{ path: 'toilet_bags', component: ToiletBagsComponent }
@@ -65,7 +65,7 @@ const appRoutes: Routes = [
 		TwistsComponent,
 		WalletsComponent,
 		BagsComponent,
-		BeltsComponent,
+		DifferentProductsComponent,
 		ToiletBagsComponent,
 		CoversComponent,
 		DetailsComponent

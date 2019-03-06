@@ -1,0 +1,13 @@
+<div class="different-products">
+    <div class="different-products_block block" *ngFor="let item of different_products">
+        <div class="block_image">
+            <img src="{{item.image1}}" alt="product">
+        </div>
+        <div class="block_text">
+            <p>{{item.description}}</p>
+        </div>
+        <div class="block_price">
+            <p style="color:green">{{item.price}}</p>
+        </div>
+    </div>
+</div>

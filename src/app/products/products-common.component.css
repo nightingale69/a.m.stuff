@@ -1,8 +1,8 @@
 .products-common {
     position: relative;
-    width: 100%;
     height: 100%;
     min-height: 800px;
+    padding: 60px;
 }
 
 .shop_block {
@@ -13,15 +13,18 @@
     position: sticky;
     width: 200px;
     height: 100%;
-    margin-top: 30px;
-    top: 100px;
-    left: 10px;
+    top: 130px;
     float: left;
+    border: 1px solid rgb(10, 48, 0);
+    background-image: url(/assets/images/products/shop_menu.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
     z-index: 10;
 }
 
 .shop_block--menu li {
-    background-color: #eee;
     display: block;
     transition: background-color 1s 0s ease;
 }
@@ -29,7 +32,7 @@
 .shop_block--menu p,
 .shop_block--menu a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -39,14 +42,14 @@
 
 .shop_block--menu li:hover,
 .shop_block--menu li:hover p {
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(83, 83, 83);
     cursor: pointer;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.active {
-    background-color: rgb(156, 156, 156);
-    color: white;
+.shop_block--menu li .active {
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
 }
 
 .shop_block--content {

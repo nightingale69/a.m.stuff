@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   	selector: 'app-twists',
@@ -6,6 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   	styleUrls: ['./twists.component.css']
 })
 export class TwistsComponent {
+
+	public constructor(private titleService: Title ) { }
+	ngOnInit() {
+		this.titleService.setTitle('a.m.stuff - Скрутки');
+	}
 
 	twists = 
   	[

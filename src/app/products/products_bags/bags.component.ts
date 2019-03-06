@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-bags',
-  templateUrl: './bags.component.html',
-  styleUrls: ['./bags.component.css']
+  	selector: 'app-bags',
+  	templateUrl: './bags.component.html',
+  	styleUrls: ['./bags.component.css']
 })
 export class BagsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	public constructor(private titleService: Title ) { }
+	ngOnInit() {
+		this.titleService.setTitle('a.m.stuff - Сумки');
+	}
 
 }
