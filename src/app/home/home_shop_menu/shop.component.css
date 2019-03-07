@@ -1,6 +1,8 @@
 .shop {
+    position: relative;
     max-width: 100%;
     margin: 0 auto;
+    background-color: rgb(255, 255, 255);
 }
 
 .shop > div {

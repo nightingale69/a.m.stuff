@@ -10,18 +10,18 @@ export class SocialComponent {
 
   public carouselTileItems: Array<any> = 
   [
-    {image: 'assets/images/instagram/slide1.jpg', text: 'ссылка 1', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide2.jpg', text: 'ссылка 2', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide3.jpg', text: 'ссылка 3', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide4.jpg', text: 'ссылка 4', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide5.jpg', text: 'ссылка 5', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide6.jpg', text: 'ссылка 6', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide1.jpg', text: 'ссылка 7', url:'https://www.instagram.com/p/BokXsYtFi-O/'},
+    {image: 'assets/images/home/instagram/slide1.jpg', text: 'ссылка 1', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide2.jpg', text: 'ссылка 2', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide3.jpg', text: 'ссылка 3', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide4.jpg', text: 'ссылка 4', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide5.jpg', text: 'ссылка 5', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide6.jpg', text: 'ссылка 6', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide1.jpg', text: 'ссылка 7', url:'https://www.instagram.com/p/BokXsYtFi-O/'},
 
-    {image: 'assets/images/instagram/slide4.jpg', text: 'ссылка 8', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide5.jpg', text: 'ссылка 9', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide6.jpg', text: 'ссылка 10', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
-    {image: 'assets/images/instagram/slide1.jpg', text: 'ссылка 11', url:'https://www.instagram.com/p/BokXsYtFi-O/'}
+    {image: 'assets/images/home/instagram/slide4.jpg', text: 'ссылка 8', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide5.jpg', text: 'ссылка 9', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide6.jpg', text: 'ссылка 10', url:'https://www.instagram.com/p/BokXsYtFi-O/'}, 
+    {image: 'assets/images/home/instagram/slide1.jpg', text: 'ссылка 11', url:'https://www.instagram.com/p/BokXsYtFi-O/'}
   ];
 
   public carouselTile: NguCarouselConfig = {
