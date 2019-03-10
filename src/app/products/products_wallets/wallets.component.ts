@@ -10,7 +10,7 @@ export class WalletsComponent {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Кошельки');
+		this.titleService.setTitle('A.M.STUFF - Кошельки');
 	}
 
     wallets = 

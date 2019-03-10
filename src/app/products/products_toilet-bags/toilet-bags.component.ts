@@ -10,7 +10,7 @@ export class ToiletBagsComponent {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Несессеры');
+		this.titleService.setTitle('A.M.STUFF - Несессеры');
 	}
 
   	toilet_bags = 

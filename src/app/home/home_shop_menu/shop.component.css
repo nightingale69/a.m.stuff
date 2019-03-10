@@ -1,31 +1,226 @@
 .shop {
     position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
+	width: 100%;
+	height: 40vh;
+	top: -15px;  
+	max-width: 100%;
 }
 
-.shop > div {
+.shop_title {
+	position: relative;
+	width: 30%;
+	top: 10px;
+	margin: 0 auto;
+	background-color: black;
+	border-top: 3px solid rgb(92, 75, 0);
+	color: white;
+	border-bottom: 0px;
+	z-index: 100;
+}
+
+.shop_menu {
+	position: relative;
+	margin: 0 auto;
+	width: 93%;
+	top: 5px;
+	padding: 20px;
+	background-color: black;
+	z-index: 99;
+}
+
+.shop_menu ul {
+  	width: 100%;
+  	display: table;
+  	table-layout: fixed;
+  	margin: 0;
+  	padding: 0;
+}
+.shop_menu ul li {
+  	display: table-cell;
+  	vertical-align: bottom;
+  	position: relative;
+  	width: 16.666%;
+  	height: 250px;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	transition: all 300ms ease;
+}
+.shop_menu ul li div {
+  	display: block;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 36vh;
+}
+.shop_menu ul li div a {
+  	display: block;
+  	height: 36vh;
+  	width: 100%;
+  	position: relative;
+  	z-index: 3;
+  	vertical-align: bottom;
+  	padding: 15px 20px;
+  	box-sizing: border-box;
+  	color: #fff;
+  	text-decoration: none;
+  	transition: all 300ms ease;
+}
+.shop_menu ul li div a * {
+  	margin: 0;
+  	width: 100%;
+  	text-overflow: ellipsis;
+  	position: relative;
+  	z-index: 5;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	-webkit-transform: translateX(-20px);
+  	transform: translateX(-20px);
+  	-webkit-transition: all 300ms ease;
+  	transition: all 300ms ease;
+}
+.shop_menu ul li div a h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 18vh;
+}
+.shop_menu ul li div a p {
+  	top: 160px;
+  	font-size: 13.5px;
+}
+.shop_menu ul li:nth-child(1) {
+  	background-image: url('/assets/images/shop_menu/twists.jpg');
+  	background-size: cover;
+}
+.shop_menu ul li:nth-child(2) {
+  	background-image: url('/assets/images/shop_menu/wallets.jpg');
+  	background-size: cover;
+}
+.shop_menu ul li:nth-child(3) {
+  	background-image: url('/assets/images/shop_menu/belts.jpg');
+  	background-size: cover;
+}
+.shop_menu ul li:nth-child(4) {
+  	background-image: url('/assets/images/shop_menu/covers.jpg');
+  	background-size: cover;
+}
+.shop_menu ul li:nth-child(5) {
+  	background-image: url('/assets/images/shop_menu/bracelets.jpg');
+  	background-size: cover;
+}
+.shop_menu ul li:nth-child(6) {
+  	background-image: url('/assets/images/shop_menu/toilet_bags.jpg');
+  	background-size: cover;
+}
+.shop_menu ul:hover li, .shop_menu ul:focus-within li {
+  	width: 8%;
+}
+.shop_menu ul li:focus {
+  	outline: none;
+}
+.shop_menu ul:hover li:hover, .shop_menu ul li:focus, .shop_menu ul:focus-within li:focus {
+  	width: 60%;
+}
+.shop_menu ul:hover li:hover a, .shop_menu ul li:focus a, .shop_menu ul:focus-within li:focus a {
+  	background: rgba(0, 0, 0, .3);
+}
+.shop_menu ul:hover li:hover a *, .shop_menu ul li:focus a *, .shop_menu ul:focus-within li:focus a * {
+  	opacity: 1;
+  	-webkit-transform: translateX(0);
+  	transform: translateX(0);
+}
+.shop_menu ul:hover li {
+  	width: 15% !important;
+}
+.shop_menu ul:hover li a * {
+  	opacity: 0 !important;
+}
+.shop_menu ul:hover li:hover {
+  	width: 25% !important;
+}
+.shop_menu ul:hover li:hover a {
+  	background: rgba(255, 255, 255, 0.4);
+  	color: rgb(0, 0, 0);
+}
+.shop_menu ul:hover li:hover a * {
+  	opacity: 1 !important;
+  	-webkit-transform: translateX(0);
+  	transform: translateX(0);
+  	font-size: 40px;
+  	top: 13vh;
+}
+@media screen and (max-width: 600px) {
+  	body {
+  	  	margin: 0;
+  	}
+  	.shop_menu {
+  	  	height: auto;
+  	}
+  	.shop_menu ul li, .shop_menu ul:hover li, .shop_menu ul li:hover, .shop_menu ul:hover li:hover {
+  	  	position: relative;
+  	  	display: table;
+  	  	table-layout: fixed;
+  	  	width: 100%;
+  	  	-webkit-transition: none;
+  	  	transition: none;
+  	}
+}
+.about {
+  	text-align: center;
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: 12px;
+  	color: #666;
+}
+.about a {
+  	color: blue;
+  	text-decoration: none;
+}
+.about a:hover {
+  	text-decoration: underline;
+}
+
+
+
+/*.shop-container-items{
+    position: relative;
+    z-index: 100;
+}
+
+/*.shop-container-items:before {
+    content: '';
+    position: absolute;
+    width: 94%;
+    height: 85%;
+    top: 55px;
+    right: 0;
+    bottom: 0;
+    left: 42px;
+    background-color: rgb(48, 35, 0);
+    transform: skew(178deg);
+    z-index: -1;  
+}*/
+
+/*.shop-container-items > div {
     padding: 1em;
     opacity: 1;
-    outline: 2px solid rgba(255,255,255,1);
+    outline: 2px solid transparent;
     outline-offset: 0px;
-    transition: opacity 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in 
+    transition: opacity 0.2s 0s ease-in, outline 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in 
 }
-.shop > div:hover {
-    opacity: 0.8;
+.shop-container-items > div:hover {
+    opacity: 0.9;
+    outline: 2px solid rgb(255, 255, 255);
     outline-offset: -15px;
     cursor: pointer;
 }
 
-.shop {
+.shop-container-items {
     display: grid;
     grid-gap: 10px;
     grid-auto-rows: minmax(30%, 300px);
     padding: 60px;
 }
 
-.shop p {
+.shop-container-items p {
     color: white;
     margin-top: 100px;
     font-size: 40px; 
@@ -74,6 +269,12 @@
     background-position: center center;
 }
 
-.shop_item {
-
-}
+/*.border-shop-back {
+    position: absolute;
+    width: 675px;
+    top: 44px;
+    border-top: 64px solid rgb(80, 59, 0);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    z-index: 99;
+}*/

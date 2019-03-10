@@ -10,7 +10,7 @@ export class AboutComponent {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - О нас');
+		this.titleService.setTitle('A.M.STUFF - О нас');
 	}
 
   	reviews = 

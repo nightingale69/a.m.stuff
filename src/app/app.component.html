@@ -1,4 +1,5 @@
 <main class="main" id="top">
+	<div class="header-back"></div>
 	<div class="header-container">
 		<div class="header">
 			<ul class="navbar">
@@ -35,13 +36,32 @@
 				<li><p [ngx-scroll-to]="'top'" routerLink="/products/twists">ИЗДЕЛИЯ</p></li>
 				<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ГЛАВНАЯ</p></li>
 			</ul>
-			<div class="border-menu"></div>
-			<div class="border-menu2"></div>
+			<div class="border-menu-back"></div>
+			<div class="border-menu-front"></div>
 		</div>
 	</div>
 	<router-outlet></router-outlet>
 </main>
 <footer class="footer">
 	<p>© Мануфактура “<span>A.M.STUFF</span>”, 2019.</p>
+	<div class="container">
+		<ul class="submenu">
+			<li><a href="#">
+				<p class="fa fa-youtube">
+					<img src="assets/images/description/youtube_icon.png" width="40px" height="40px" alt="insta">
+				</p>
+			</a></li>
+			<li><a href="#">
+				<p class="fa fa-instagram">
+					<img src="assets/images/description/instagram_icon.png" width="40px" height="40px" alt="insta">
+				</p>
+			</a></li>
+			<li><a href="#">
+				<p class="fa fa-vk">
+					<img src="assets/images/description/vk_icon.png" width="40px" height="40px" alt="vk">
+				</p>
+			</a></li>
+		</ul>
+	</div>
 </footer>
 

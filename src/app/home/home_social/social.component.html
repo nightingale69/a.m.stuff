@@ -1,7 +1,26 @@
 <div class="social">
-	<h1 class="social_title">НАШ ИНСТАГРАМ</h1>
-	<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
-	<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
+	<div class="instagram_title">
+		<h1>НАШ ИНСТАГРАМ</h1>
+		<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
+	</div>
+	<div class="social-container-items">
+		<a href="https://www.instagram.com/p/BtB0DJJAyU1/" class="social_first" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BokXsYtFi-O/" class="social_second" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BnrIxOFFatf/" class="social_third" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BcA01X6hu9v/" class="social_fourth" target="_blank"></a>
+		<a href="https://www.instagram.com/p/Bb4YIluh-X2/" class="social_fifth" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BXdGfjjhr8F/" class="social_sixth" target="_blank"></a>
+		<a href="" class="social_seventh" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BquxUZbgyx0/" class="social_eighth" target="_blank"></a>
+		<a href="https://www.instagram.com/p/Bned0pEnvBw/" class="social_ninth" target="_blank"></a>
+		<a href="https://www.instagram.com/p/BoZguIXA-Y0/" class="social_tenth" target="_blank"></a>
+	</div>
+
+
+
+
+
+	<!--<ngu-carousel #myCarousel [inputs]="carouselTile" [dataSource]="carouselTileItems">
 		<ngu-tile *nguCarouselDef="let item; let i = index" class="tile">
 		  	<div class="tile-nohover" [style.backgroundImage]="'url(' + item.image + ')'" style="background-size: cover; height: 200px"></div>
 			<div class="tile-hover">
@@ -10,18 +29,18 @@
 				</a>
 			</div>
 		</ngu-tile>
-	</ngu-carousel>
+	</ngu-carousel>-->
 
-    <div class="social_channel">
+    <!--<div class="social_channel">
         <iframe width="98.5%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
-	</div>
+	</div>-->
 	
 	<div class="content__reviews reviews">
-		<h1 style="margin-bottom: 30px">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
+		<h1 style="margin-bottom: 30px; border-top: 3px solid rgb(92, 75, 0);">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
 		  <div class="reviews__item" *ngFor="let review of reviews">
 				<div class="reviews__item--block photo-gallery">
 					<div class="image_photo">
-						<img src="{{review.photo}}" alt="photo">
+						<img decoding="auto" srcset="{{review.photo}}" alt="photo">
 					</div>
 				</div>
 				<div class="product_review--block description_review">

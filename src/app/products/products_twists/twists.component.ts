@@ -10,7 +10,7 @@ export class TwistsComponent {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Скрутки');
+		this.titleService.setTitle('A.M.STUFF - Скрутки');
 	}
 
 	twists = 

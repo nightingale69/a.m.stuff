@@ -10,7 +10,7 @@ export class DifferentProductsComponent {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Разные товары');
+		this.titleService.setTitle('A.M.STUFF - Разные товары');
 	}
 
   	different_products = 

@@ -1,23 +1,15 @@
-.description {
+.content__description {
     position: fixed;
-    width: 100%;
-    height: 550px;
+    max-width: 100%;
+    top: 35vh;
     margin: 0 auto;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    background-image: url(/assets/images/description/description_home.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-size: cover 100%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
 }
 
-.content__description {
-    position: relative;
-    max-width: 100%;
-    height: 400px;
+.content__description p {
     margin: 0 auto;
-    margin-top: 550px;
-    background-color: rgb(219, 219, 219);
+    width: 70%;
+    color: rgb(255, 255, 255);
 }

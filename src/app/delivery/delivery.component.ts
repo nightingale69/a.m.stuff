@@ -75,7 +75,7 @@ export class DeliveryComponent implements OnInit {
   	orderForm: FormGroup;
 	
 	ngOnInit(): void {
-		this.titleService.setTitle('a.m.stuff - Доставка и оплата');
+		this.titleService.setTitle('A.M.STUFF - Доставка и оплата');
 
 		this.orderForm = new FormGroup({
 		  	'name': new FormControl('', [

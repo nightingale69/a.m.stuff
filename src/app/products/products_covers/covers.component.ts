@@ -10,6 +10,6 @@ export class CoversComponent implements OnInit {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Кейсы');
+		this.titleService.setTitle('A.M.STUFF - Кейсы');
 	}
 }

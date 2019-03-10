@@ -10,7 +10,7 @@ export class BagsComponent implements OnInit {
 
 	public constructor(private titleService: Title ) { }
 	ngOnInit() {
-		this.titleService.setTitle('a.m.stuff - Сумки');
+		this.titleService.setTitle('A.M.STUFF - Сумки');
 	}
 
 }
