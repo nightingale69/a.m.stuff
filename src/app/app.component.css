@@ -1,4 +1,36 @@
-.header-container {
+.header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.header_menu{
+    position: relative;
+    top: -20px;
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+.header_menu li{
+    display: inline;
+    padding: 0 6% 0 0;
+}
+.header_menu p{
+    display: inline-block;
+    color: rgb(36, 36, 36);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.main {
+    position: relative;
+    height: 2000px;
+    z-index: 100;
+}
+
+/*.header-container {
     position: sticky;
     top: 0;
     left: 0;
@@ -25,7 +57,7 @@
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
-}
+}*/
 
 /*
 .logo_a .left_eye {
@@ -61,7 +93,7 @@
     box-shadow: 0px 0px 10px 5px #ffbb00;
 }*/
 
-.border-menu-front {
+/*.border-menu-front {
     position: absolute;
     width: 675px;
     top: 35px;
@@ -139,11 +171,6 @@ li p:hover {
     overflow: hidden;
     top: 0;
     left: 0;
-    background-image: url(/assets/images/background_forest.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-size: cover 100%;
 }
 
 
@@ -236,12 +263,7 @@ li p:hover {
 .main {
     position: relative;
     text-align: center;
-    background-image: url(/assets/images/wood_background.jfif);
-   background-repeat: no-repeat;
-   background-position-x: 50%;
-   background-position-y: 100%;
-   background-size: cover 100%;
-   background-attachment: fixed;
+    background-color: black;
     z-index: 1;
 }
 
@@ -263,4 +285,4 @@ li p:hover {
     line-height: 100px; 
     font-family: 'LeArchitect', 'arial', sans-serif; 
     text-decoration: underline;
-}
+}*/

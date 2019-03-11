@@ -1,4 +1,15 @@
-.shop {
+.home_shop {
+
+}
+
+.shop_block {
+	font-size: 30px;
+	color: white;
+}
+
+
+
+/*.shop {
     position: relative;
 	width: 100%;
 	height: 40vh;
@@ -176,14 +187,14 @@
 }
 .about a:hover {
   	text-decoration: underline;
-}
+}*/
 
 
 
 /*.shop-container-items{
     position: relative;
     z-index: 100;
-}
+}*/
 
 /*.shop-container-items:before {
     content: '';

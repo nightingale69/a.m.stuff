@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: 'Exo2-Regular', 'arial', sans-serif;
+    font-family: 'Montserrat-Medium', 'arial', serif;
     background-color: black;
     min-width: 705px;
 }
@@ -15,8 +15,8 @@ a {
 }
 
 @font-face {
-    font-family: Tsarevich; /* Имя шрифта */
-    src: url(assets/fonts/Haymaker.ttf); /* Путь к файлу со шрифтом */
+    font-family: Montserrat-Medium; /* Имя шрифта */
+    src: url(assets/fonts/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {

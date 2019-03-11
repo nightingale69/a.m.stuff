@@ -6,7 +6,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { UICarouselModule } from "ui-carousel";
 
 import { AppComponent } from './app.component';
-import { HomeCommonComponent } from './home/home_common/home-common.component';
+import { HomeCommonComponent } from './home/home-common.component';
 import { DescriptionComponent } from './home/home_description/description.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { AboutComponent } from './about/about.component';
