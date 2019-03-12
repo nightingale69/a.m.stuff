@@ -1,15 +1,34 @@
 <div class="home_shop">
-	<div class="shop_title">
+	<!--<div class="shop_title">
 		<p>ПРОДУКЦИЯ</p>
-	</div>
-	<div class="shop_list">
-		<ul class="shop_list_column1 shop_list_column">
-			<li *ngFor="let item of production_column1"><p [ngx-scroll-to]="'top'" routerLink="{{item.routerLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</p></li>
-		</ul>
-		<ul class="shop_list_column2 shop_list_column">
-			<li *ngFor="let item of production_column2"><p [ngx-scroll-to]="'top'" routerLink="{{item.routerLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</p></li>
-		</ul>
-	</div>
+	</div>-->
+	<div class="shop-container-items">
+        <div class="shop_twists" routerLink="/products/twists" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <div class="shop_item">
+                <p>СКРУТКИ</p>
+            </div>
+        </div>
+        <div class="shop_wallets" routerLink="/products/wallets" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <div class="shop_item">
+                <p>КОШЕЛЬКИ</p>
+            </div>
+        </div>
+        <div class="shop_belts" routerLink="/products/belts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <div class="shop_item">
+                <p>РЕМНИ</p>
+            </div>
+        </div>
+        <div class="shop_covers" routerLink="/products/covers" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <div class="shop_item">
+                <p>КЕЙСЫ</p>
+            </div>
+        </div>
+        <div class="shop_bags" routerLink="/products/bags" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <div class="shop_item">
+                <p>БРАСЛЕТЫ</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--<div class="shop" [ngx-scroll-to]="'top'">

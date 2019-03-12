@@ -1,21 +1,21 @@
 .home_shop {
-    width: 100%;
-    height: 50vh;
-    color: white;
+	width: 100%;
+	background-color: #F3F3F3;
+    color: rgb(0, 0, 0);
     text-align: center;
 	z-index: 999;
-	
-	background-image: url(/assets/images/description_back.jpg);
-    background-repeat: repeat;
+
+	background-image: url(/assets/images/background_forest.jpg);
+    background-repeat: no-repeat;
     background-position-y: 100%;
-    background-size: 20%;
+    background-size: cover;
 }
 
 .shop_title {
 	font-size: 40px;
 	font-weight: bold;
 	letter-spacing: 10px;
-	padding-top: 4vh;
+	padding-top: 3vh;
 }
 
 .shop_list {
@@ -230,37 +230,36 @@
 
 
 
-/*.shop-container-items{
+.shop-container-items{
     position: relative;
     z-index: 100;
-}*/
+}
 
-/*.shop-container-items:before {
-    content: '';
+.shop-container-items:before {
+    content: "";
     position: absolute;
-    width: 94%;
-    height: 85%;
-    top: 55px;
-    right: 0;
+    left: 10%;
     bottom: 0;
-    left: 42px;
-    background-color: rgb(48, 35, 0);
-    transform: skew(178deg);
-    z-index: -1;  
-}*/
+    height: 1px;
+    width: 80%;
+    border-top: 2px solid #212121;
+}
 
-/*.shop-container-items > div {
+.shop-container-items > div {
     padding: 1em;
     opacity: 1;
     outline: 2px solid transparent;
-    outline-offset: 0px;
-    transition: opacity 0.2s 0s ease-in, outline 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in 
+	outline-offset: 0px;
+	background-color: white;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    transition: opacity 0.2s 0s ease-in, box-shadow 0.2s 0s ease-in, outline 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in 
 }
 .shop-container-items > div:hover {
     opacity: 0.9;
-    outline: 2px solid rgb(255, 255, 255);
-    outline-offset: -15px;
-    cursor: pointer;
+    /*outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -15px;*/
+	cursor: pointer;
+	box-shadow: 0px 1px 5px 3px rgba(158, 158, 158, 0.75);
 }
 
 .shop-container-items {
@@ -282,7 +281,7 @@
     background-image: url(/assets/images/shop_menu/twists.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+	background-position: center center;
 }
 
 .shop_wallets {
@@ -318,13 +317,3 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-/*.border-shop-back {
-    position: absolute;
-    width: 675px;
-    top: 44px;
-    border-top: 64px solid rgb(80, 59, 0);
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    z-index: 99;
-}*/
