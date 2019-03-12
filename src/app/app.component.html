@@ -1,9 +1,9 @@
-<div class="body_container">
+<div class="body_container" id="top">
 	<header class="header">
 		<ul class="header_menu">
-			<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Главная</p></li>
-			<li><p [ngx-scroll-to]="'top'" routerLink="/products/twists">Изделия</p></li>
-			<li><img style="position: relative;	top: 25px;" src="assets/images/description/logo.png" width="60px" height="60px" alt="logo"></li>
+			<li><p [ngx-scroll-to]="'contact'" routerLink="/" routerLinkActive="none" [routerLinkActiveOptions]="{exact: true}">Контакты</p></li>
+			<li><p [ngx-scroll-to]="'shop'" routerLink="/">Продукция</p></li>
+			<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p></li>
 			<li><p [ngx-scroll-to]="'top'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Доставка</p></li>
 			<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>
 		</ul>
@@ -12,7 +12,7 @@
 		<router-outlet></router-outlet>
 	</main>
 	<footer class="footer">
-		
+		<p>© Мануфактура "A.M.STUFF", 2019</p>
 	</footer>
 </div>
 

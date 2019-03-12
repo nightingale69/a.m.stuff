@@ -8,13 +8,13 @@ import { UICarouselModule } from "ui-carousel";
 import { AppComponent } from './app.component';
 import { HomeCommonComponent } from './home/home-common.component';
 import { DescriptionComponent } from './home/home_description/description.component';
-import { DeliveryComponent } from './delivery/delivery.component';
-import { AboutComponent } from './about/about.component';
-import { CommunicationsComponent } from './communications/communications.component';
-import { SoucesComponent } from './souces/souces.component';
-import { ReviewsComponent } from './reviews/reviews.component';
+import { ContactComponent } from './home/home_contact/contact.component';
 import { ShopComponent } from './home/home_shop_menu/shop.component';
 import { SocialComponent } from './home/home_social/social.component';
+import { DeliveryComponent } from './delivery/delivery.component';
+import { AboutComponent } from './about/about.component';
+import { SoucesComponent } from './souces/souces.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductsCommonComponent } from './products/products-common.component';
 import { DetailsComponent } from './products/products_details/details.component';
 import { TwistsComponent } from './products/products_twists/twists.component';
@@ -42,7 +42,6 @@ const appRoutes: Routes = [
 	  ] 
 	},
 	{ path: 'delivery', component: DeliveryComponent },
-	{ path: 'communication', component: CommunicationsComponent },
 	{ path: 'about', component: AboutComponent },
 	{ path: 'products/:details', component: DetailsComponent },
 	{ path: '**', component: NotFoundComponentComponent }
@@ -54,7 +53,6 @@ const appRoutes: Routes = [
   	  	DescriptionComponent,
   	  	DeliveryComponent,
   	  	AboutComponent,
-  	  	CommunicationsComponent,
   	  	SoucesComponent,
 		ReviewsComponent,
 		ShopComponent,
@@ -68,7 +66,8 @@ const appRoutes: Routes = [
 		DifferentProductsComponent,
 		ToiletBagsComponent,
 		CoversComponent,
-		DetailsComponent
+		DetailsComponent,
+		ContactComponent
   	],
   	imports: [
     	BrowserModule,

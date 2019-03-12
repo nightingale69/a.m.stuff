@@ -1,9 +1,14 @@
 <div class="home_shop">
-	<div class="shop_block_twists shop-block">
-		СКРУТКИ
+	<div class="shop_title">
+		<p>ПРОДУКЦИЯ</p>
 	</div>
-	<div class="shop_block_wallets shop_block">
-		КОШЕЛЬКИ
+	<div class="shop_list">
+		<ul class="shop_list_column1 shop_list_column">
+			<li *ngFor="let item of production_column1"><p [ngx-scroll-to]="'top'" routerLink="{{item.routerLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</p></li>
+		</ul>
+		<ul class="shop_list_column2 shop_list_column">
+			<li *ngFor="let item of production_column2"><p [ngx-scroll-to]="'top'" routerLink="{{item.routerLink}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{item.name}}</p></li>
+		</ul>
 	</div>
 </div>
 
