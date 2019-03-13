@@ -26,17 +26,25 @@
     font-weight: bold;
 }
 
-.header_menu p:hover {
+/*.header_menu p:hover {
     border-bottom: 3px solid rgb(95, 70, 0);
 }
 
 .header_menu p.active {
     border-bottom: 3px solid rgb(95, 70, 0);
-}
+}*/
 
 .main {
     position: relative;
+    background-color: #f3f3f3;
     z-index: 100;
+}
+
+.title_block {
+    font-size: 40px;
+	font-weight: bold;
+    letter-spacing: 10px;
+    padding-top: 4vh;
 }
 
 /*.header-container {

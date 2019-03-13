@@ -33,17 +33,20 @@
 
     <!--<div class="social_channel">
         <iframe width="98.5%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
-	</div>-->
-	
-	<!--<div class="content__reviews reviews">
-		<h1 style="margin-bottom: 30px; border-top: 3px solid rgb(92, 75, 0);">ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</h1>
-		  <div class="reviews__item" *ngFor="let review of reviews">
-				<div class="reviews__item--block photo-gallery">
-					<div class="image_photo">
-						<img decoding="auto" srcset="{{review.photo}}" alt="photo">
-					</div>
+	</div>
+</div>-->
+
+<div class="content__reviews reviews">
+	<div class="reviews_title title_block">
+		<p>ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</p>
+	</div>
+		<div class="reviews__item" *ngFor="let review of reviews">
+			<div class="reviews__item--block photo-gallery">
+				<div class="image_photo">
+					<img decoding="auto" srcset="{{review.photo}}" alt="photo">
 				</div>
-				<div class="product_review--block description_review">
+			</div>
+			<div class="product_review--block description_review">
 				<p style="padding: 10px 0 10px 0; text-align: center">
 					{{ review.name }}
 				</p>
@@ -51,6 +54,5 @@
 					{{ review.description }}
 				</i></q>
 			</div>	
-		  </div>
+		</div>
 	</div>
-</div>-->

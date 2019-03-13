@@ -6,8 +6,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat-Medium', 'arial', serif;
-    background-color: #212121;
-    min-width: 705px;
+    background-color: black;
+    min-width: 600px;
 }
 
 a {

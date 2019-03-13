@@ -38,11 +38,20 @@
 
 /*reviews*/
 .content__reviews {
-    position: relative;
-    height: auto;
-    color: #ffffff;
-    padding: 20px 0 20px 0;
-    z-index: 10;
+    width: 100%;
+  	min-height: 80vh;
+  	background-color: #212121;
+	color: #F3F3F3;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.reviews_title {
+	font-size: 40px;
+	font-weight: bold;
+    letter-spacing: 10px;
+    padding-bottom: 50px;
 }
 
 .reviews__item {
