@@ -5,11 +5,29 @@
             РУЧНАЯ РАБОТА <br> <span> НАТУРАЛЬНАЯ КОЖА </span>
         </p>
     </div>-->
-</div>
-<div class="home_description_text">
-    <div class="description_text">
-        <p>
-            РУЧНАЯ РАБОТА <br> <span> НАТУРАЛЬНАЯ КОЖА </span>
-        </p>
+    <div class="description_container">
+        <slideshow #slideshow
+                   [imageUrls]="slides"
+                   [height]="height"
+                   [minHeight]="minHeight"
+                   [arrowSize]="arrowSize"
+                   [showArrows]="showArrows"
+                   [disableSwiping]="disableSwiping"
+                   [autoPlay]="autoPlay"
+                   [stopAutoPlayOnSlide]="stopAutoPlayOnSlide"
+                   [debug]="debug"
+                   [backgroundSize]="backgroundSize"
+                   [backgroundPosition]="backgroundPosition"
+                   [backgroundRepeat]="backgroundRepeat"
+                   [showDots]="showDots"
+                   [dotColor]="dotColor"
+                   [showCaptions]="showCaptions"
+                   [captionColor]="captionColor"
+                   [captionBackground]="captionBackground"
+                   [lazyLoad]="lazyLoad"
+                   [hideOnNoSlides]="hideOnNoSlides"
+                   [fullscreen]="fullscreen">
+        </slideshow>
     </div>
+
 </div>

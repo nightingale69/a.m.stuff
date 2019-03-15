@@ -26,6 +26,9 @@ import { ToiletBagsComponent } from './products/products_toilet-bags/toilet-bags
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import { NgxSlidesModule } from 'ngx-slides';
+import {SlideshowModule} from 'ng-simple-slideshow';
+
 /*import { ProductsModule } from './products/products.module';*/
 
 
@@ -78,7 +81,9 @@ const appRoutes: Routes = [
 		),
 		ScrollToModule.forRoot(),
 		UICarouselModule,
-		NguCarouselModule
+		NguCarouselModule,
+		NgxSlidesModule,
+		SlideshowModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]
