@@ -1,9 +1,10 @@
 .header {
     position: sticky;
+    width: 100%;
     top: 0;
     height: 70px;
     list-style-type: none;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(161, 161, 161);
     z-index: 1000;
 }
@@ -45,6 +46,10 @@
 .logo p {
     font-size: 20px;
     text-decoration: underline;
+}
+
+.active {
+    outline: none
 }
 
 /*.header_menu p:hover {

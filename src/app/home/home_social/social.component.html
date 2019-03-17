@@ -1,8 +1,8 @@
-<!--<div class="social">
-	<div class="instagram_title">
-		<h1>НАШ ИНСТАГРАМ</h1>
-		<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: gray">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
-	</div>
+<div class="social">
+	<div class="instagram_title block_title">
+		<p>НАШ ИНСТАГРАМ</p>
+		<a href="https://www.instagram.com/knife.roll/" target="_blank"><p style="color: rgb(94, 94, 94); font-size: 20px; letter-spacing: 0;">🄰.🄼.🅂🅃🅄🄵🄵 /🔴Скрутка для ножей🔪</p></a>
+    </div>
 	<div class="social-container-items">
 		<a href="https://www.instagram.com/p/BtB0DJJAyU1/" class="social_first" target="_blank"></a>
 		<a href="https://www.instagram.com/p/BokXsYtFi-O/" class="social_second" target="_blank"></a>
@@ -14,7 +14,14 @@
 		<a href="https://www.instagram.com/p/BquxUZbgyx0/" class="social_eighth" target="_blank"></a>
 		<a href="https://www.instagram.com/p/Bned0pEnvBw/" class="social_ninth" target="_blank"></a>
 		<a href="https://www.instagram.com/p/BoZguIXA-Y0/" class="social_tenth" target="_blank"></a>
-	</div>-->
+	</div>
+
+	<div class="youtube_title block_title">
+		<p>НАШ YOUTUBE</p>
+	</div>
+	<div class="social_channel">
+        <iframe width="75%" style="min-height: 600px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
 
 
 
@@ -35,24 +42,3 @@
         <iframe width="98.5%" height="800px" style="padding-top:50px;" src="https://www.youtube.com/embed/yH1Oh-zbUGU" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>-->
-
-<div class="content__reviews reviews">
-	<div class="reviews_title title_block">
-		<p>ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</p>
-	</div>
-		<div class="reviews__item" *ngFor="let review of reviews">
-			<div class="reviews__item--block photo-gallery">
-				<div class="image_photo">
-					<img decoding="auto" srcset="{{review.photo}}" alt="photo">
-				</div>
-			</div>
-			<div class="product_review--block description_review">
-				<p style="padding: 10px 0 10px 0; text-align: center">
-					{{ review.name }}
-				</p>
-				<q><i>
-					{{ review.description }}
-				</i></q>
-			</div>	
-		</div>
-	</div>

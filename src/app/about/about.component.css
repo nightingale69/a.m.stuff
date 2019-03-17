@@ -16,7 +16,7 @@
 
 .about-block {
     display: inline-block;
-    width: 650px;
+    max-width: 650px;
     font-size: 30px;
     vertical-align: middle;
     text-align: left;

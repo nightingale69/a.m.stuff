@@ -8,7 +8,7 @@ import { UICarouselModule } from "ui-carousel";
 import { AppComponent } from './app.component';
 import { HomeCommonComponent } from './home/home-common.component';
 import { DescriptionComponent } from './home/home_description/description.component';
-import { ContactComponent } from './home/home_contact/contact.component';
+import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './home/home_shop_menu/shop.component';
 import { SocialComponent } from './home/home_social/social.component';
 import { DeliveryComponent } from './delivery/delivery.component';
@@ -16,7 +16,6 @@ import { AboutComponent } from './about/about.component';
 import { SoucesComponent } from './souces/souces.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { ProductsCommonComponent } from './products/products-common.component';
-import { DetailsComponent } from './products/products_details/details.component';
 import { TwistsComponent } from './products/products_twists/twists.component';
 import { WalletsComponent } from './products/products_wallets/wallets.component';
 import { DifferentProductsComponent } from './products/products_different/different-products.component';
@@ -28,6 +27,7 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 import { NguCarouselModule } from '@ngu/carousel';
 import { NgxSlidesModule } from 'ngx-slides';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 /*import { ProductsModule } from './products/products.module';*/
 
@@ -44,9 +44,9 @@ const appRoutes: Routes = [
 		{ path: 'toilet_bags', component: ToiletBagsComponent }
 	  ] 
 	},
+	{ path: 'contact', component: ContactComponent },
 	{ path: 'delivery', component: DeliveryComponent },
 	{ path: 'about', component: AboutComponent },
-	{ path: 'products/:details', component: DetailsComponent },
 	{ path: '**', component: NotFoundComponentComponent }
 ];
 
@@ -69,7 +69,6 @@ const appRoutes: Routes = [
 		DifferentProductsComponent,
 		ToiletBagsComponent,
 		CoversComponent,
-		DetailsComponent,
 		ContactComponent
   	],
   	imports: [
@@ -83,7 +82,8 @@ const appRoutes: Routes = [
 		UICarouselModule,
 		NguCarouselModule,
 		NgxSlidesModule,
-		SlideshowModule
+		SlideshowModule,
+		NgxGalleryModule
   	],
   	providers: [],
   	bootstrap: [AppComponent]

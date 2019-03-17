@@ -1,27 +1,36 @@
 .products-common {
     position: relative;
     height: 100%;
-    min-height: 800px;
     padding: 60px;
-    background-color: rgb(0, 0, 0);
+    text-align: center
 }
 
-.shop_block {
+
+.wallets_block {
+    display: inline-block;
+}
+
+.wallets_gallery {
+    padding-right: 5%;
+}
+
+.wallets_description {
+    max-width: 500px;
+    vertical-align: top;
+    text-align: left;
+}
+
+/*.shop_block {
     display: block;
 }
 
 .shop_block--menu {
     position: sticky;
-    width: 200px;
+    min-width: 150px;
     height: 100%;
     top: 130px;
     float: left;
     border: 1px solid rgb(10, 48, 0);
-    background-image: url(/assets/images/products/shop_menu.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-size: cover;
     z-index: 10;
 }
 
@@ -55,4 +64,9 @@
 
 .shop_block--content {
     padding-left: 222px;
-}
+}*/
+
+
+
+
+

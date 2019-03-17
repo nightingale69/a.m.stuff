@@ -1,6 +1,6 @@
 .content__getting {
     position: relative;
-    height: auto;
+    min-height: 95vh;
     background-color: #212121;
     color: white;
     z-index: 10;

@@ -1,16 +1,16 @@
 <div class="body_container" id="top">
 	<header class="header">
 		<ul class="header_menu">
-			<li><p [ngx-scroll-to]="'shop'" routerLink="/">Изделия</p></li>
-			<li><p [ngx-scroll-to]="'delivery'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Доставка</p></li>
+			<li><p [ngx-scroll-to]="'shop'" routerLink="/products" routerLinkActive="active">Изделия</p></li>
+			<li><p [ngx-scroll-to]="'delivery'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Доставка</p></li>
 			<!--<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p></li>-->
 			<li class="logo">
 				<img style="position: relative;	top: 22px; z-index: 99;" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
 				src="assets/images/description/logo.png" width="58px" height="58px" alt="logo">
 				<p class="logo_title" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p>
 			</li>
-			<li><p [ngx-scroll-to]="'about'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>
-			<li><p [ngx-scroll-to]="'contact'" routerLink="/" routerLinkActive="none" [routerLinkActiveOptions]="{exact: true}">Контакты</p></li>
+			<li><p [ngx-scroll-to]="'contact'" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Связаться</p></li>
+			<li><p [ngx-scroll-to]="'about'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>
 		</ul>
 	</header>
 	<main class="main">
