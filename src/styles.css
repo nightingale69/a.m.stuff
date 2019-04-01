@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat-Medium', 'arial', serif;
-    background-color: black;
+    background-color: #f3f3f3;
     min-width: 600px;
 }
 
@@ -17,6 +17,11 @@ a {
 @font-face {
     font-family: Montserrat-Medium; /* Имя шрифта */
     src: url(assets/fonts/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Lobster; /* Имя шрифта */
+  src: url(assets/fonts/Lobster-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
@@ -65,6 +70,41 @@ a {
     z-index: 2;
     animation: 1s linear 0s normal none infinite running front;
     -webkit-animation: 1s linear 0s normal none infinite running front;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  font-size: 50px;
+  top: 20px;
+  font-family: 'Lobster', 'arial', serif;
+  text-align: center;
+  color: rgb(153, 56, 0)
+}
+
+.products_info_block p::first-letter,
+.products_info_block h3::first-letter {
+  font-family: 'Lobster', 'arial', serif;
+  font-size: 35px;
+  color: rgb(153, 56, 0)
+}
+
+.products_info_block::nth-child(1) {
+
+}
+
+.products_info_block p:nth-child(2) {
+	text-align: justify;
+}
+.products_info_block p:nth-child(3) {
+	padding-top: 20px;
+}
+
+.products_info_block p:nth-child(4) {
+	padding-top: 10px;
+	font-family: 'Lobster', 'arial', serif;
+  	font-size: 25px;
+  	color: rgb(0, 107, 0)
 }
 
   @keyframes front {

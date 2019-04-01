@@ -1,90 +1,83 @@
 <div class="body_container" id="top">
 	<header class="header">
 		<ul class="header_menu">
-			<li><p [ngx-scroll-to]="'shop'" routerLink="/products" routerLinkActive="active">Изделия</p></li>
-			<li><p [ngx-scroll-to]="'delivery'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Доставка</p></li>
-			<!--<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p></li>-->
 			<li class="logo">
-				<img style="position: relative;	top: 22px; z-index: 99;" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+				<img style="position: relative;	top: 23px; z-index: 99;" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
 				src="assets/images/description/logo.png" width="58px" height="58px" alt="logo">
 				<p class="logo_title" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p>
 			</li>
-			<li><p [ngx-scroll-to]="'contact'" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Связаться</p></li>
-			<li><p [ngx-scroll-to]="'about'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>
+			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Скрутки</p></li>
+			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Несессеры</p></li>
+			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Кошельки и картхолдеры</p></li>
+			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Различные товары</p></li>
+			<!--<li><p [ngx-scroll-to]="'delivery'" routerLinkActive="active">Приобретение</p></li>
+			<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p></li>-->
+			<!--<li><p [ngx-scroll-to]="'contact'" routerLinkActive="active">Связаться</p></li>-->
+			<!--<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>-->
+			<!--<li><p [ngx-scroll-to]="'reviews'" routerLinkActive="active">Отзывы</p></li>-->
 		</ul>
 	</header>
 	<main class="main">
-		<router-outlet></router-outlet>
+		<!--<router-outlet></router-outlet>-->
+		<app-description id="home"></app-description>
+		<app-intro></app-intro>
+    	<app-products-common id="products"></app-products-common>
+    	<app-contact id="contact"></app-contact>
+		<app-reviews id="reviews"></app-reviews>
 	</main>
 	<footer class="footer">
-		<p>© Мануфактура "A.M.STUFF", 2019</p>
+		<div class="acquisition">
+			<div class="delivery">
+				<div class="title-delivery">
+					<p>
+						Доставка
+					</p>
+				</div>
+				  <div class="delivery_item" *ngFor="let item of deliveries">
+						<p style="font-weight: bold;">{{ item.place }}</p>
+						<p>{{ item.where1 }} {{ item.price1 }}</p>
+						<p>{{ item.comment1 }}</p>
+						<p>{{ item.where2 }} {{ item.price2 }}</p>
+						<p>{{ item.comment2 }}</p>
+						<p>{{ item.where3 }} {{ item.price3 }}</p>
+						<p>{{ item.comment3 }}</p>
+				  </div>
+			</div>
+			<div class="payment">
+				  <div class="title-payment">
+					<p>
+						Оплата
+					</p>
+				</div>
+				  <div class="payment_item" *ngFor="let item of payment">
+						<p style="font-weight: bold">{{ item.how }}</p>
+						<p>{{ item.comment }}</p>
+				  </div>
+			</div>
+		</div>
+		<!--<div class="socials">
+			<div class="container">
+				<ul class="submenu">
+					<li><a href="https://www.instagram.com/knife.roll/" target="_blank">
+						<p class="fa fa-instagram">
+							
+						</p>
+					</a></li>
+					<li><a href="https://www.youtube.com/channel/UC8wbBOzimN0FoyBE1iYfNXA" target="_blank">
+						<p class="fa fa-youtube">
+							
+						</p>
+					</a></li>
+					<li><a href="https://vk.com/nikolaev_cuisine" target="_blank">
+						<p class="fa fa-vk">
+							
+						</p>
+					</a></li>
+				</ul>
+			</div>
+		</div>-->
+		<div class="copyright">
+			<p>Мануфактура "A.M.STUFF", 2019</p>
+		</div>
 	</footer>
 </div>
-
-<!--<main class="main" id="top">
-	<div class="header-back"></div>
-	<div class="header-container">
-		<div class="header">
-			<ul class="navbar">
-				<li>
-					<a class="vk" href="https://vk.com/nikolaev_cuisine" target="_blank" title="Наша группа">
-						<img src="assets/images/description/vk_icon.png" width="30px" height="30px" alt="vk">
-					</a>
-				</li>
-				<li>
-					<a class="instagram" href="https://www.instagram.com/knife.roll/" target="_blank" title="Наш инстаграм">
-						<img src="assets/images/description/instagram_icon.png" width="30px" height="30px" alt="insta">
-					</a>
-				</li>
-				<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О НАС</p></li>
-				<li><p routerLink="/communication" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">связь</p></li>
-				<li><p [ngx-scroll-to]="'top'" routerLink="/delivery" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ДОСТАВКА</p></li>						
-				<li>
-					<div class="rectangle">
-						<img src="assets/images/description/logo_back.png" style="position: relative" width="110px" height="150px" alt="logo">
-						<div class="description_site__container">
-							<div class="container__wrapper_logo">
-								<div routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="logo_a" style="cursor: pointer">
-									<h2 class="logo_title" style="position: relative; width: auto; top: -50px; left: 10px; font-size: 17px;">a.m.stuff</h2>
-									<img style="position: relative;	top: 12px; z-index: 99;" src="assets/images/description/logo.png" width="130px" height="130px" alt="logo">
-									<div class="eyes">
-										<div class="left_eye"></div>
-										<div class="right_eye"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</li>
-				<li><p [ngx-scroll-to]="'top'" routerLink="/products/twists">ИЗДЕЛИЯ</p></li>
-				<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">ГЛАВНАЯ</p></li>
-			</ul>
-			<div class="border-menu-back"></div>
-			<div class="border-menu-front"></div>
-		</div>
-	</div>
-	<router-outlet></router-outlet>
-</main>
-<footer class="footer">
-	<p>© Мануфактура “<span>A.M.STUFF</span>”, 2019.</p>
-	<div class="container">
-		<ul class="submenu">
-			<li><a href="#">
-				<p class="fa fa-youtube">
-					<img src="assets/images/description/youtube_icon.png" width="40px" height="40px" alt="insta">
-				</p>
-			</a></li>
-			<li><a href="#">
-				<p class="fa fa-instagram">
-					<img src="assets/images/description/instagram_icon.png" width="40px" height="40px" alt="insta">
-				</p>
-			</a></li>
-			<li><a href="#">
-				<p class="fa fa-vk">
-					<img src="assets/images/description/vk_icon.png" width="40px" height="40px" alt="vk">
-				</p>
-			</a></li>
-		</ul>
-	</div>
-</footer>-->
-

@@ -41,34 +41,50 @@
 
 
     <!--<ngx-gallery [options]="galleryOptions" [images]="galleryImagesTwists"></ngx-gallery>-->
-    <div class="products_wallets">
+
+
+    <div class="intro_title title">
+        <p>Что мы создаём?</p>
+    </div>
+
+
+    <div class="products_wallets" *ngFor="let item of products">
         <div class="wallets_gallery wallets_block">
             <ngx-gallery [options]="galleryOptions" [images]="galleryImagesWallets"></ngx-gallery>
         </div>
-        <div class="wallets_description wallets_block">
-            <h3>Кошельки</h3>
+        <div class="wallets_info wallets_block products_info_block">
+            <h3>{{item.name}}</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {{item.description}}
+            </p>
+            <p>
+                Размеры <br>
+                {{item.dimensions}}
+            </p>
+            <p>
+                Цена: {{item.price}} рублей
             </p>
         </div>
     </div>
 
-    <div class="products_wallets">
-        <div class="wallets_gallery wallets_block">
-            <ngx-gallery [options]="galleryOptions" [images]="galleryImagesWallets"></ngx-gallery>
+    <!--<div class="products_toilet-bags">
+        <div class="toilet-bags_gallery toilet-bags_block">
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImagesToiletBags"></ngx-gallery>
         </div>
-        <div class="wallets_description wallets_block">
-            <h3>Кошельки</h3>
+        <div class="toilet-bags_description toilet-bags_block">
+            <h3>Несессеры</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Любите путешествовать или вы тот, кто постоянно в командировках? Тогда это то, что вам нужно! 
+                Незаменимый помощник в любой поездке - кожаный несессер, в который поместятся все ваши аксессуары, 
+                средства личной гигиены и электробритва. Создаст порядок и защитит остальные вещи от протекания шампуня) 
+                также это отличное решение для хранения мелочей в повседневной жизни!
+                Функциональный, стильный, эксклюзивный несессер из натуральной кожи не займёт много места, но существенно упростит вашу жизнь.
             </p>
         </div>
+    </div>-->
+
+    <div class="products_different">
+        
     </div>
 
 

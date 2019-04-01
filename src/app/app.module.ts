@@ -7,7 +7,7 @@ import { UICarouselModule } from "ui-carousel";
 
 import { AppComponent } from './app.component';
 import { HomeCommonComponent } from './home/home-common.component';
-import { DescriptionComponent } from './home/home_description/description.component';
+import { DescriptionComponent } from './description/description.component';
 import { ContactComponent } from './contact/contact.component';
 import { ShopComponent } from './home/home_shop_menu/shop.component';
 import { SocialComponent } from './home/home_social/social.component';
@@ -28,6 +28,7 @@ import { NguCarouselModule } from '@ngu/carousel';
 import { NgxSlidesModule } from 'ngx-slides';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { IntroComponent } from './intro/intro.component';
 
 /*import { ProductsModule } from './products/products.module';*/
 
@@ -69,7 +70,8 @@ const appRoutes: Routes = [
 		DifferentProductsComponent,
 		ToiletBagsComponent,
 		CoversComponent,
-		ContactComponent
+		ContactComponent,
+		IntroComponent
   	],
   	imports: [
     	BrowserModule,

@@ -1,31 +1,30 @@
-<div class="content__getting getting">
-	<div class="getting-payment--container">
-	  	<div class="getting-delivery">
-	  	  	<h2 class="title-delivery title_block">
-	  	  	  	ДОСТАВКА
-			</h2>
-	  	  	<div class="select-delivery" *ngFor="let item of deliveries">
-	  	  	  	<p style="font-weight: bold;">{{ item.place }}</p>
-	  	  	  	<p>{{ item.where1 }}</p>
-	  	  	  	<p>{{ item.price1 }}</p>
-	  	  	  	<p>{{ item.comment1 }}</p>
-	  	  	  	<p>{{ item.where2 }}</p>
-	  	  	  	<p>{{ item.price2 }}</p>
-	  	  	  	<p>{{ item.comment2 }}</p>
-	  	  	  	<p>{{ item.where3 }}</p>
-	  	  	  	<p>{{ item.price3 }}</p>
-	  	  	  	<p>{{ item.comment3 }}</p>
-	  	  	</div>
-	  	</div>
-	  	<div class="getting-payment">
-	  	  	<h2 class="title-payment title_block">
-	  	  	  	ОПЛАТА
-			</h2>
-	  	  	<div class="select-payment" *ngFor="let item of payment">
-	  	  	  	<p style="font-weight: bold">{{ item.how }}</p>
-	  	  	  	<p>{{ item.comment }}</p>
-	  	  	</div>
+<div class="acquisition">
+	<div class="delivery">
+	  	<div class="title-delivery title">
+			<p>
+				Доставка
+			</p>
 		</div>
+	  	<div class="delivery_item" *ngFor="let item of deliveries">
+	  	  	<p style="font-weight: bold;">{{ item.place }}</p>
+	  	  	<p>{{ item.where1 }} {{ item.price1 }}</p>
+	  	  	<p>{{ item.comment1 }}</p>
+	  	  	<p>{{ item.where2 }} {{ item.price2 }}</p>
+	  	  	<p>{{ item.comment2 }}</p>
+	  	  	<p>{{ item.where3 }} {{ item.price3 }}</p>
+	  	  	<p>{{ item.comment3 }}</p>
+	  	</div>
+	</div>
+	<div class="payment">
+	  	<div class="title-payment title">
+			<p>
+				Оплата
+			</p>
+		</div>
+	  	<div class="payment_item" *ngFor="let item of payment">
+	  	  	<p style="font-weight: bold">{{ item.how }}</p>
+	  	  	<p>{{ item.comment }}</p>
+	  	</div>
 	</div>
 </div>
 

@@ -1,6 +1,6 @@
 <div class="content__reviews reviews">
-	<div class="reviews_title title_block">
-		<p>ОТЗЫВЫ О НАШИХ ИЗДЕЛИЯХ</p>
+	<div class="reviews_title title">
+		<p>Отзывы о наших изделиях</p>
 	</div>
   	<div class="reviews__item" *ngFor="let review of reviews">
   	  	<div class="reviews__item--block photo-gallery">
@@ -12,9 +12,9 @@
 			<p style="padding: 10px 0 10px 0; text-align: center">
 				{{ review.name }}
 			</p>
-  	  	  	<q><i>
+  	  	  	<q>
   	  	  	  	{{ review.description }}
-			</i></q>
+			</q>
 		</div>	
   	</div>
 </div>

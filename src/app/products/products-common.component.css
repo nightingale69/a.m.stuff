@@ -1,7 +1,7 @@
 .products-common {
     position: relative;
     height: 100%;
-    padding: 60px;
+    padding: 100px 0 0 0;
     text-align: center
 }
 
@@ -14,11 +14,13 @@
     padding-right: 5%;
 }
 
-.wallets_description {
-    max-width: 500px;
+.wallets_info {
+    max-width: 800px;
     vertical-align: top;
     text-align: left;
 }
+
+
 
 /*.shop_block {
     display: block;

@@ -11,6 +11,6 @@ export class HomeCommonComponent implements OnInit {
 	public constructor(private titleService: Title ) { }
 
 	ngOnInit() {
-		this.titleService.setTitle('A.M.STUFF - Главная');
+		this.titleService.setTitle('A.M.STUFF');
 	}
 }
