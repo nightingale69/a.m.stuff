@@ -1,6 +1,7 @@
 .intro {
     position: relative;
     padding: 100px 0 50px 0;
+    background-color: rgb(37, 37, 37);
     text-align: justify;
 }
 
@@ -22,7 +23,7 @@
     position: relative;
     width: 60%;
     margin: 0 auto;
-    color: #000000;
+    color: rgb(210, 210, 210);
     font-family: 'Caveat-Regular', 'arial', sans-serif;
     font-size: 30px;
     line-height: 30px;

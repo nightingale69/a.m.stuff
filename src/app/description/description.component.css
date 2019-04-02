@@ -26,8 +26,8 @@
 .description_slogan p {
     font-size: 90px;
     font-family: 'Lobster', 'arial', serif;
-    color: antiquewhite;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(124, 33, 0) 50%, rgba(0, 0, 0, 0) 95%);
+    color: rgb(210, 210, 210);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 95%);
     margin: 0 auto;
     padding-bottom: 15px;
 }

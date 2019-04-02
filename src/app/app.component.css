@@ -4,8 +4,8 @@
     top: 0;
     height: 70px;
     list-style-type: none;
-    background-color: rgb(233, 233, 233);
-    border-bottom: 1px solid rgb(153, 56, 0);
+    background-color: rgb(37, 37, 37);
+    border-bottom: 1px solid rgb(210, 210, 210);
     z-index: 1000;
 }
 
@@ -22,7 +22,7 @@
 .header_menu p{
     display: inline-block;
     font-family: 'Lobster', 'arial', serif;
-    color: rgb(153, 56, 0);
+    color: rgb(210, 210, 210);
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
@@ -44,7 +44,7 @@
     font-size: 20px;
     text-decoration: underline;
     font-family: 'Montserrat-Medium', 'arial', serif;
-    color: rgb(51, 51, 51);
+    color: rgb(233, 233, 233);
 }
 
 .active {
@@ -311,8 +311,8 @@ li p:hover {
 
 .footer {
     position: relative;
-    background-color: rgb(153, 56, 0);
-    color: rgb(233, 233, 233);
+    background-color: rgb(37, 37, 37);
+    color: rgb(210, 210, 210);
     font-size: 15px;
     z-index: 2;
     text-align: center;
