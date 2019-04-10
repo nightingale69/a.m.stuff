@@ -20,15 +20,16 @@ export class ProductsCommonComponent {
                 height: '400px',
                 imageSize: NgxGalleryImageSize.Cover,
 				thumbnailsColumns: 5,
-				thumbnailMargin: 2,
-                thumbnailsMargin: 2,
+				thumbnailMargin: 0,
+                thumbnailsMargin: 0,
                 thumbnailsArrows: true,
+                thumbnails: false,
                 preview: true,
                 previewAnimation: false,
                 imageArrowsAutoHide: true,
                 previewCloseOnClick: true,
-                arrowPrevIcon: 'fa fa-angle-left',
-                arrowNextIcon: 'fa fa-angle-right'
+                arrowPrevIcon: 'fa fa-arrow-circle-left',
+                arrowNextIcon: 'fa fa-arrow-circle-right'
             },
             // max-width 800
             {

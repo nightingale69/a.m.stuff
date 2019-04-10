@@ -6,9 +6,15 @@
     display: inline-block;
     width: 400px;
     margin: 0px 20px 20px 0;
-    text-align: center
+    text-align: center;
+    background-color: #212121;
 }
 
 img {
     width: 400px;
+}
+
+.block_text p {
+    min-height: 60px;
+    color: white;
 }

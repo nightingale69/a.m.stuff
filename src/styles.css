@@ -39,6 +39,11 @@ a {
     src: url(assets/fonts/Caveat-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: Army; /* Имя шрифта */
+    src: url(assets/fonts/Army_Wide.ttf); /* Путь к файлу со шрифтом */
+}
+
 .app-root__load {
     position: absolute;
     margin: auto;
@@ -79,47 +84,48 @@ a {
   top: 20px;
   font-family: 'Lobster', 'arial', serif;
   text-align: center;
-  color: rgb(255, 255, 255)
+  color: rgb(255, 190, 0);
 }
 
-.products_info_block p::first-letter,
-.products_info_block h3::first-letter {
-  font-family: 'Lobster', 'arial', serif;
-  font-size: 35px;
-  color: rgb(153, 56, 0)
-}
-
-.products_info_block::nth-child(1) {
-
+.products_info_block h3 {
+	color: rgb(255, 190, 0);
 }
 
 .products_info_block p:nth-child(2) {
-	text-align: justify;
+    text-align: justify;
+    color: rgb(255, 255, 255);
 }
 .products_info_block p:nth-child(3) {
-	padding-top: 20px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
 }
 
 .products_info_block p:nth-child(4) {
 	padding-top: 10px;
 	font-family: 'Lobster', 'arial', serif;
   	font-size: 25px;
-  	color: rgb(0, 107, 0)
+  	color: rgb(255, 255, 255)
 }
 
-  @keyframes front {
+.gallery_block {
+	/*border: 3px solid wheat;
+	border-bottom: 0px;
+	background-color: wheat*/
+}
+
+@keyframes front {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+}
+}
+@-webkit-keyframes front {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(-360deg);
     }
-  }
-  @-webkit-keyframes front {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
-  }
+}

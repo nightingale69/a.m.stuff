@@ -1,72 +1,13 @@
-.products-common {
+.products {
     position: relative;
-    height: 100%;
-    padding: 100px 0 0 0;
-    text-align: center
+    padding: 50px 0 0 0;
+    text-align: center;
+    background-image: url(/assets/images/paper.jpg);
+    background-repeat: repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: 40%;
 }
-
-
-.wallets_block {
-    display: inline-block;
-}
-
-.wallets_gallery {
-    padding-right: 5%;
-}
-
-.wallets_info {
-    max-width: 800px;
-    vertical-align: top;
-    text-align: left;
-}
-
-
-
-/*.shop_block {
-    display: block;
-}
-
-.shop_block--menu {
-    position: sticky;
-    min-width: 150px;
-    height: 100%;
-    top: 130px;
-    float: left;
-    border: 1px solid rgb(10, 48, 0);
-    z-index: 10;
-}
-
-.shop_block--menu li {
-    display: block;
-    transition: background-color 1s 0s ease;
-}
-
-.shop_block--menu p,
-.shop_block--menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border: 0;
-    outline: 0;
-}
-
-.shop_block--menu li:hover,
-.shop_block--menu li:hover p {
-    background-color: rgb(83, 83, 83);
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-}
-
-.shop_block--menu li .active {
-    background-color: rgb(83, 83, 83);
-    color: rgb(255, 255, 255);
-}
-
-.shop_block--content {
-    padding-left: 222px;
-}*/
 
 
 

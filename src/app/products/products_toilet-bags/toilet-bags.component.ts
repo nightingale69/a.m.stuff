@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryLayout, NgxGalleryImageSize } from 'ngx-gallery';
 
 @Component({
   selector: 'app-toilet-bags',
@@ -8,12 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ToiletBagsComponent {
 
-	public constructor(private titleService: Title ) { }
-	ngOnInit() {
-		this.titleService.setTitle('A.M.STUFF - Несессеры');
-	}
-
-  	toilet_bags = 
+  	toilet_bagsa = 
   	[
   	  	{
 		    url: "blue_toilet_bag",
@@ -51,5 +46,74 @@ export class ToiletBagsComponent {
   	    	description: 'Несессер красный', 
   	    	price: '1000 ₽'
   	  	}
+	];
+
+	galleryOptions = [
+		{
+			width: '580px',
+			height: '400px',
+			imageSize: NgxGalleryImageSize.Cover,
+			thumbnailsColumns: 5,
+			thumbnailMargin: 0,
+			thumbnailsMargin: 0,
+			thumbnailsArrows: true,
+			thumbnails: false,
+			preview: true,
+			previewAnimation: false,
+			imageArrowsAutoHide: true,
+			previewCloseOnClick: true,
+			arrowPrevIcon: 'fa fa-arrow-circle-left',
+			arrowNextIcon: 'fa fa-arrow-circle-right'
+		},
+		// max-width 800
+		{
+			breakpoint: 800,
+			width: '600px',
+			height: '400px',
+			imagePercent: 80,
+			thumbnailsPercent: 20,
+		},
+		// max-width 400
+		{
+			breakpoint: 600,
+			width: '30vw',
+			height: '600px',
+			imagePercent: 80,
+			thumbnailsPercent: 20,
+			preview: false
+		}
+	];
+
+	toilet_bags = [
+		{
+			small: 'assets/images/products/toilet_bags/tbag_blue.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_blue.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_blue.jpg'
+		},
+		{
+			small: 'assets/images/products/toilet_bags/tbag_burgundy.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_burgundy.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_burgundy.jpg'
+		},
+		{
+			small: 'light_brown_toilet_bag',
+			medium: 'light_brown_toilet_bag',
+			big: 'light_brown_toilet_bag'
+		},
+		{
+			small: 'dark_brown_toilet_bag',
+			medium: 'dark_brown_toilet_bag',
+			big: 'dark_brown_toilet_bag'
+		},
+		{
+			small: 'brown_toilet_bag',
+			medium: 'brown_toilet_bag',
+			big: 'brown_toilet_bag'
+		},
+		{
+			small: 'red_toilet_bag',
+			medium: 'red_toilet_bag',
+			big: 'red_toilet_bag'
+		}
 	];
 }

@@ -6,27 +6,26 @@
 				src="assets/images/description/logo.png" width="58px" height="58px" alt="logo">
 				<p class="logo_title" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p>
 			</li>
-			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Скрутки</p></li>
-			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Несессеры</p></li>
-			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Кошельки и картхолдеры</p></li>
-			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Различные товары</p></li>
-			<!--<li><p [ngx-scroll-to]="'delivery'" routerLinkActive="active">Приобретение</p></li>
-			<li><p [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p></li>-->
-			<!--<li><p [ngx-scroll-to]="'contact'" routerLinkActive="active">Связаться</p></li>-->
-			<!--<li><p [ngx-scroll-to]="'top'" routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">О нас</p></li>-->
-			<!--<li><p [ngx-scroll-to]="'reviews'" routerLinkActive="active">Отзывы</p></li>-->
+			<li><p [ngx-scroll-to]="'twists'" routerLinkActive="active">Скрутки</p></li>
+			<li><p [ngx-scroll-to]="'toilet-bags'" routerLinkActive="active">Несессеры</p></li>
+			<li><p [ngx-scroll-to]="'wallets'" routerLinkActive="active">Кошельки</p></li>
+			<li><p [ngx-scroll-to]="'products'" routerLinkActive="active">Ремни</p></li>
+			<li><p [ngx-scroll-to]="'different'" routerLinkActive="active">Различные товары</p></li>
 		</ul>
 	</header>
 	<main class="main">
 		<!--<router-outlet></router-outlet>-->
 		<app-description id="home"></app-description>
 		<app-intro></app-intro>
-    	<app-products-common id="products"></app-products-common>
+		<app-twists id="twists"></app-twists>
+		<app-toilet-bags id="toilet-bags"></app-toilet-bags>
+		<app-wallets id="wallets"></app-wallets>
+		<app-different-products id="different"></app-different-products>
     	<app-contact id="contact"></app-contact>
-		<app-reviews id="reviews"></app-reviews>
+		<!--<app-reviews id="reviews"></app-reviews>-->
 	</main>
 	<footer class="footer">
-		<div class="acquisition">
+		<!--<div class="acquisition">
 			<div class="delivery">
 				<div class="title-delivery">
 					<p>
@@ -54,27 +53,9 @@
 						<p>{{ item.comment }}</p>
 				  </div>
 			</div>
-		</div>
+		</div>-->
 		<!--<div class="socials">
-			<div class="container">
-				<ul class="submenu">
-					<li><a href="https://www.instagram.com/knife.roll/" target="_blank">
-						<p class="fa fa-instagram">
-							
-						</p>
-					</a></li>
-					<li><a href="https://www.youtube.com/channel/UC8wbBOzimN0FoyBE1iYfNXA" target="_blank">
-						<p class="fa fa-youtube">
-							
-						</p>
-					</a></li>
-					<li><a href="https://vk.com/nikolaev_cuisine" target="_blank">
-						<p class="fa fa-vk">
-							
-						</p>
-					</a></li>
-				</ul>
-			</div>
+			
 		</div>-->
 		<div class="copyright">
 			<p>Мануфактура "A.M.STUFF", 2019</p>

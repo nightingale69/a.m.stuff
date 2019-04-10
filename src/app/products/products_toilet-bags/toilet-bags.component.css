@@ -1,39 +1,16 @@
 .toilet-bags {
-    width: 100%;
-    text-align: left
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .toilet-bags_block {
     display: inline-block;
-    width: 400px;
-    margin: 0px 20px 20px 0;
-    text-align: center;
-    border: 0;
-    outline: 0;
 }
 
-.toilet-bags_block:hover {
-    cursor: pointer;
-}
-
-img {
-    width: 400px;
-}
-
-.block_image {
-    position: relative;
-}
-
-.block_image .asas {
-    position: relative;
-    opacity: 1;
-    transition: opacity 0.2s 0s ease-in, outline-offset 0.15s 0s ease-in;
-    z-index: 10; 
-}
-
-.block_image_background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9; 
+.toilet-bags_info {
+    max-width: 700px;
+    vertical-align: top;
+    background-color: rgb(37, 37, 37);
+    text-align: left;
 }

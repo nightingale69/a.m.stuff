@@ -1,15 +1,21 @@
-<div class="wallets">
-  <div class="wallets_block block block_product" *ngFor="let item of wallets">
-      <div class="route" routerLink="/products/{{item.url}}" routerLinkActive="active">
-          <div class="block_image">
-              <img src="{{item.image}}" alt="wallet" class="asas" draggable="false">
-          </div>
-          <div class="block_text">
-              <p>{{item.description}}</p>
-          </div>
-          <div class="block_price">
-              <p style="color:green">{{item.price}}</p>
-          </div>
-      </div>
-  </div>
+<div class="products_wallets">
+    <div class="wallets_gallery wallets_block gallery_block">
+        <ngx-gallery [options]="galleryOptions" [images]="galleryImagesWallets"></ngx-gallery>
+    </div>
+    <div class="wallets_info wallets_block products_info_block">
+        <h3>Картхолдеры</h3>
+        <p>
+            Миниатюрный, но вместительный. В него можно положить кредитки, бумажные купюры, водительское удостоверение. 
+            Этот картхолдер очень удобно носить в кармане - он не займёт много места. 
+            Если Вы цените настоящий ручной труд и любите небольшие и функциональные вещи - этот кожаный картхолдер будет для Вас настоящей находкой. 
+            Имеется различные цвета как кожи так и ниток.
+        </p>
+        <p>
+            Размеры <br>
+            90ч90ч90
+        </p>
+        <p>
+            Цена: 900 рублей
+        </p>
+    </div>
 </div>
