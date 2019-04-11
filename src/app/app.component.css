@@ -26,6 +26,10 @@
     cursor: pointer;
     font-size: 22px;
 }
+.header_menu p:hover{
+    color: rgb(255, 190, 0);
+    text-shadow: 1px 1px 1px rgb(255, 190, 0);
+}
 
 .logo_title {
     padding: 17px 7px 17px 0;
@@ -38,7 +42,8 @@
 .logo p {
     font-size: 20px;
     font-family: 'Army', 'arial', serif;
-    text-decoration: underline;
+    color: rgb(210, 210, 210);
+    text-decoration: underline rgb(255, 190, 0);
 }
 
 .active {
@@ -55,10 +60,7 @@
 
 .main {
     position: relative;
-    background-image: url(/assets/images/paper.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: 500px;
+    background-color: rgb(255, 190, 0);
     z-index: 100;
 }
 

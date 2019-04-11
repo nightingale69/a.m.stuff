@@ -1,5 +1,6 @@
 .home_description {
     position: relative;
+    background-color: rgb(56, 56, 56);
     width: 100%;
 }
 
@@ -13,7 +14,6 @@
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 50%;
-    background-size: cover;
 }
 
 .description_slogan {
@@ -24,10 +24,12 @@
 }
 
 .description_slogan p {
-    font-size: 90px;
+    font-size: 80px;
     font-family: 'Lobster', 'arial', serif;
     color: rgb(210, 210, 210);
+    text-shadow: 1px 1px 1px rgb(210, 210, 210);
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgb(12, 12, 12) 50%, rgba(0, 0, 0, 0) 95%);
+    border-top: 1px solid rgb(255, 190, 0);
     margin: 0 auto;
     padding-bottom: 15px;
 }

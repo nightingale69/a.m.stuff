@@ -6,6 +6,11 @@
     border-top: 1px solid rgb(210, 210, 210);
 }
 
+.intro_title {
+    color: rgb(255, 190, 0);
+    text-shadow: 1px 1px 1px rgb(255, 190, 0);
+}
+
 .intro_logo {
     position: absolute;
     top: 50px;

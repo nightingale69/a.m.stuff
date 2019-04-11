@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat-Medium', 'arial', serif;
-    background-color: #f3f3f3;
+    background-color: #000000;
     min-width: 600px;
 }
 
@@ -84,7 +84,8 @@ a {
   top: 20px;
   font-family: 'Lobster', 'arial', serif;
   text-align: center;
-  color: rgb(255, 190, 0);
+  color: rgb(37, 37, 37);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 
 .products_info_block h3 {

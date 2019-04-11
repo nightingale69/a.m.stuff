@@ -1,6 +1,7 @@
 .twists {
-    width: 100%;
-    text-align: left
+    position: relative;
+    padding: 100px 0 50px 0;
+    text-align: justify;
 }
 
 .twists_block {
