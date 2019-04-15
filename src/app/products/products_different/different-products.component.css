@@ -4,6 +4,7 @@
     padding: 83px 0 50px 0;
     text-align: center;
     margin: 0 auto;
+    color: rgb(59, 59, 59);
 }
 
 .different-products_container {
@@ -13,18 +14,31 @@
 
 .different-products_block {
     display: inline-block;
-    width: 400px;
-    min-height: 630px;
+    width: 350px;
     margin: 0px 20px 20px 0;
-    text-align: center;
-    background-color: #212121;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
 }
 
-img {
-    width: 400px;
+.block_name,
+.block_description,
+.block_price {
+    padding: 0 20px;
 }
 
-.block_text p {
-    min-height: 60px;
-    color: white;
+.block_name p {
+    min-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+}
+
+.block_description p {
+    min-height: 100px;
+}
+
+.block_price p {
+    min-height: 30px;
+    font-weight: bold;
+    color: green;
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryLayout, NgxGalleryImageSize } from 'ngx-gallery';
 
 @Component({
@@ -9,16 +8,10 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryLayo
 })
 export class DifferentProductsComponent {
 
-	public constructor(private titleService: Title ) { }
-	ngOnInit() {
-		this.titleService.setTitle('A.M.STUFF - Разные товары');
-	}
-
-
 	galleryOptions = [
 		{
-			width: '400px',
-			height: '400px',
+			width: '100%',
+			height: '350px',
 			imageSize: NgxGalleryImageSize.Cover,
 			thumbnailsColumns: 5,
 			thumbnailMargin: 0,
@@ -67,11 +60,11 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/sharpening_belt2.jpg'
 				}
 			],
-  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв имеет металлическое сварное кольцо для удержания ремня рукой при правке и карабин для крепления.', 
+  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв', 
   	  	  	price: '1000 ₽'
 		},
 		{
-			name: "Подставка-органайзер для телефона, часов и разной мелочи",
+			name: "Подставка-органайзер",
 			images: [
 				{
 					small: 'assets/images/products/different_products/organizer1.jpg',
@@ -84,11 +77,11 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/organizer2.jpg'
 				}
 			],
-  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Отличный вариант подарка другу, коллеге, боссу. Возможно добавление вашей надписи.', 
+  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Возможно добавление вашей надписи', 
   	  	  	price: '1600 ₽'
 		},
 		{
-			name: "Набор шаблонов для изготовления ремней со скругленным кончиком",
+			name: "Набор шаблонов",
 			images: [
 				{
 					small: 'assets/images/products/different_products/template1.jpg',
@@ -101,11 +94,11 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/template2.jpg'
 				}
 			],
-  	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм. Шаблоны подходят как для контуровки обоих концов ремня, так и для разметки под пробивку отверстий и установку пряжки на ременные винты.', 
+  	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм', 
   	  	  	price: '700 ₽'
 		},
 		{
-			name: "Шорник пони (шорный пони)",
+			name: "Шорный пони",
 			images: [
 				{
 					small: 'assets/images/products/different_products/pony.jpg',
@@ -113,7 +106,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/pony.jpg'
 				}
 			],
-  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это ваши вторые "руки". Индивидуальный и уникальный подход к изготовлению каждого шорника.', 
+  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это ваши вторые "руки"', 
   	  	  	price: '2000 ₽'
 		}
 	];
