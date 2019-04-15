@@ -25,12 +25,12 @@ export class DifferentProductsComponent {
 			thumbnailsMargin: 0,
 			thumbnailsArrows: true,
 			thumbnails: false,
-			preview: true,
+			preview: false,
 			previewAnimation: false,
-			imageArrowsAutoHide: true,
+			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
-			arrowPrevIcon: 'fa fa-arrow-circle-left',
-			arrowNextIcon: 'fa fa-arrow-circle-right'
+			arrowPrevIcon: 'fa fa-arrow-left',
+			arrowNextIcon: 'fa fa-arrow-right'
 		},
 		// max-width 800
 		{
@@ -67,7 +67,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/sharpening_belt2.jpg'
 				}
 			],
-  	  	  	description: 'Ремень для заточки', 
+  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв имеет металлическое сварное кольцо для удержания ремня рукой при правке и карабин для крепления.', 
   	  	  	price: '1000 ₽'
 		},
 		{
@@ -84,8 +84,8 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/organizer2.jpg'
 				}
 			],
-  	  	  	description: 'Подставка-органайзер для телефона, часов и разной мелочи', 
-  	  	  	price: '1000 ₽'
+  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Отличный вариант подарка другу, коллеге, боссу. Возможно добавление вашей надписи.', 
+  	  	  	price: '1600 ₽'
 		},
 		{
 			name: "Набор шаблонов для изготовления ремней со скругленным кончиком",
@@ -101,20 +101,20 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/template2.jpg'
 				}
 			],
-  	  	  	description: 'Набор шаблонов для изготовления ремней со скругленным кончиком', 
-  	  	  	price: '1000 ₽'
-		}	
-		/*{
-			image1: "assets/images/products/different_products/classic_buckle1.jpg",
-			image2: "assets/images/products/different_products/classic_buckle2.jpg",
-			description: 'Ремень мужской с классической латунной пряжкой',
-			price: '1400 ₽'
-	  	},
+  	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм. Шаблоны подходят как для контуровки обоих концов ремня, так и для разметки под пробивку отверстий и установку пряжки на ременные винты.', 
+  	  	  	price: '700 ₽'
+		},
 		{
-			image1: "assets/images/products/different_products/hand-forged_buckle1.jpg",
-			image2: "assets/images/products/different_products/hand-forged_buckle2.jpg",
-			description: 'Ремень с пряжкой ручной ковки',
-			price: '? ₽'
-		},*/	
+			name: "Шорник пони (шорный пони)",
+			images: [
+				{
+					small: 'assets/images/products/different_products/pony.jpg',
+					medium: 'assets/images/products/different_products/pony.jpg',
+					big: 'assets/images/products/different_products/pony.jpg'
+				}
+			],
+  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это ваши вторые "руки". Индивидуальный и уникальный подход к изготовлению каждого шорника.', 
+  	  	  	price: '2000 ₽'
+		}
 	];
 }

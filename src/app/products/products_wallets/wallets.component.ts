@@ -11,20 +11,22 @@ export class WalletsComponent {
 
     galleryOptions = [
 		{
-			width: '580px',
+			width: '670px',
 			height: '400px',
+			image: false,
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 5,
-			thumbnailMargin: 0,
+			thumbnailsColumns: 3,
+			thumbnailsRows: 2,
+			thumbnailMargin: 10,
 			thumbnailsMargin: 0,
 			thumbnailsArrows: true,
-			thumbnails: false,
+			thumbnails: true,
 			preview: true,
-			previewAnimation: false,
+			previewAnimation: true,
 			imageArrowsAutoHide: true,
 			previewCloseOnClick: true,
-			arrowPrevIcon: 'fa fa-arrow-circle-left',
-			arrowNextIcon: 'fa fa-arrow-circle-right'
+			arrowPrevIcon: 'fa fa-arrow-left',
+			arrowNextIcon: 'fa fa-arrow-right'
 		},
 		// max-width 800
 		{

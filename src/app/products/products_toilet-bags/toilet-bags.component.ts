@@ -50,20 +50,22 @@ export class ToiletBagsComponent {
 
 	galleryOptions = [
 		{
-			width: '580px',
+			width: '670px',
 			height: '400px',
+			image: false,
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 5,
-			thumbnailMargin: 0,
+			thumbnailsColumns: 3,
+			thumbnailsRows: 2,
+			thumbnailMargin: 10,
 			thumbnailsMargin: 0,
 			thumbnailsArrows: true,
-			thumbnails: false,
+			thumbnails: true,
 			preview: true,
-			previewAnimation: false,
+			previewAnimation: true,
 			imageArrowsAutoHide: true,
 			previewCloseOnClick: true,
-			arrowPrevIcon: 'fa fa-arrow-circle-left',
-			arrowNextIcon: 'fa fa-arrow-circle-right'
+			arrowPrevIcon: 'fa fa-arrow-left',
+			arrowNextIcon: 'fa fa-arrow-right'
 		},
 		// max-width 800
 		{
@@ -96,24 +98,24 @@ export class ToiletBagsComponent {
 			big: 'assets/images/products/toilet_bags/tbag_burgundy.jpg'
 		},
 		{
-			small: 'light_brown_toilet_bag',
-			medium: 'light_brown_toilet_bag',
-			big: 'light_brown_toilet_bag'
+			small: 'assets/images/products/toilet_bags/tbag_light_brown.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_light_brown.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_light_brown.jpg'
 		},
 		{
-			small: 'dark_brown_toilet_bag',
-			medium: 'dark_brown_toilet_bag',
-			big: 'dark_brown_toilet_bag'
+			small: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg'
 		},
 		{
-			small: 'brown_toilet_bag',
-			medium: 'brown_toilet_bag',
-			big: 'brown_toilet_bag'
+			small: 'assets/images/products/toilet_bags/tbag_brown.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_brown.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_brown.jpg'
 		},
 		{
-			small: 'red_toilet_bag',
-			medium: 'red_toilet_bag',
-			big: 'red_toilet_bag'
+			small: 'assets/images/products/toilet_bags/tbag_red.jpg',
+			medium: 'assets/images/products/toilet_bags/tbag_red.jpg',
+			big: 'assets/images/products/toilet_bags/tbag_red.jpg'
 		}
 	];
 }

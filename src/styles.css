@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: 'Montserrat-Medium', 'arial', serif;
+    font-family: 'RobotoSlab', 'arial', serif;
     background-color: #000000;
     min-width: 600px;
 }
@@ -15,8 +15,8 @@ a {
 }
 
 @font-face {
-    font-family: Montserrat-Medium; /* Имя шрифта */
-    src: url(assets/fonts/Montserrat-Medium.ttf); /* Путь к файлу со шрифтом */
+    font-family: RobotoSlab; /* Имя шрифта */
+    src: url(assets/fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
