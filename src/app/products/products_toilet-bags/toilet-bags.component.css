@@ -1,5 +1,4 @@
 .toilet-bags {
-    width: 99%;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -11,6 +10,5 @@
 .toilet-bags_info {
     max-width: 700px;
     vertical-align: top;
-    background-color: rgb(37, 37, 37);
     text-align: left;
 }

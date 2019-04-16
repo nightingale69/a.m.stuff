@@ -22,6 +22,7 @@ import { DifferentProductsComponent } from './products/products_different/differ
 import { CoversComponent } from './products/products_covers/covers.component';
 import { BagsComponent } from './products/products_bags/bags.component';
 import { ToiletBagsComponent } from './products/products_toilet-bags/toilet-bags.component';
+import { BeltsComponent } from './products/products_belts/belts.component';
 import { NotFoundComponentComponent } from './not-found-component/not-found-component.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
@@ -71,7 +72,8 @@ const appRoutes: Routes = [
 		ToiletBagsComponent,
 		CoversComponent,
 		ContactComponent,
-		IntroComponent
+		IntroComponent,
+		BeltsComponent
   	],
   	imports: [
     	BrowserModule,

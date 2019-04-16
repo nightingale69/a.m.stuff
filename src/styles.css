@@ -78,10 +78,9 @@ a {
 }
 
 .title {
-  position: absolute;
+  position: relative;
   width: 100%;
   font-size: 50px;
-  top: 20px;
   font-family: 'Lobster', 'arial', serif;
   text-align: center;
   color: rgb(37, 37, 37);

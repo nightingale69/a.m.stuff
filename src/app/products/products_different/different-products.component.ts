@@ -77,7 +77,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/organizer2.jpg'
 				}
 			],
-  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Возможно добавление вашей надписи', 
+  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Возможно добавление Вашей надписи', 
   	  	  	price: '1600 ₽'
 		},
 		{
@@ -106,8 +106,20 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/pony.jpg'
 				}
 			],
-  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это ваши вторые "руки"', 
+  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки"', 
   	  	  	price: '2000 ₽'
+		},
+		{
+			name: "Монетница",
+			images: [
+				{
+					small: 'assets/images/products/different_products/coin_box.jpg',
+					medium: 'assets/images/products/different_products/coin_box.jpg',
+					big: 'assets/images/products/different_products/coin_box.jpg'
+				}
+			],
+  	  	  	description: 'Короткое описание этой монетницы. Какова цена?', 
+  	  	  	price: '? ₽'
 		}
 	];
 }

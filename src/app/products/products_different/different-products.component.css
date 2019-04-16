@@ -1,14 +1,17 @@
 .different-products {
     position: relative;
-    width: 95%;
-    padding: 83px 0 50px 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
     text-align: center;
     margin: 0 auto;
     color: rgb(59, 59, 59);
+    background-color: rgb(210, 210, 210);
+    background-image: url(/assets/images/paper.jpg);
+    background-repeat: repeat;
+    background-size: 40%;
 }
 
 .different-products_container {
-    background-color: rgb(210, 210, 210);
     padding: 20px 0 0 10px;
 }
 
