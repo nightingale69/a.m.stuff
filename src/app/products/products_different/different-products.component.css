@@ -6,9 +6,11 @@
     margin: 0 auto;
     color: rgb(59, 59, 59);
     background-color: rgb(210, 210, 210);
-    background-image: url(/assets/images/paper.jpg);
-    background-repeat: repeat;
-    background-size: 40%;
+    background-image: url(/assets/images/wood_background.jfif);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
 }
 
 .different-products_container {
@@ -21,6 +23,7 @@
     margin: 0px 20px 20px 0;
     text-align: left;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 14px 1px rgb(0, 0, 0);
 }
 
 .block_name,

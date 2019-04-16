@@ -13,7 +13,7 @@ export class DifferentProductsComponent {
 			width: '100%',
 			height: '350px',
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 5,
+			thumbnailsColumns: 0,
 			thumbnailMargin: 0,
 			thumbnailsMargin: 0,
 			thumbnailsArrows: true,
@@ -58,6 +58,11 @@ export class DifferentProductsComponent {
 					small: 'assets/images/products/different_products/sharpening_belt2.jpg',
 					medium: 'assets/images/products/different_products/sharpening_belt2.jpg',
 					big: 'assets/images/products/different_products/sharpening_belt2.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/sharpening_belt3.jpg',
+					medium: 'assets/images/products/different_products/sharpening_belt3.jpg',
+					big: 'assets/images/products/different_products/sharpening_belt3.jpg'
 				}
 			],
   	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв', 
@@ -70,6 +75,11 @@ export class DifferentProductsComponent {
 					small: 'assets/images/products/different_products/organizer1.jpg',
 					medium: 'assets/images/products/different_products/organizer1.jpg',
 					big: 'assets/images/products/different_products/organizer1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/organizer3.jpg',
+					medium: 'assets/images/products/different_products/organizer3.jpg',
+					big: 'assets/images/products/different_products/organizer3.jpg'
 				},
 				{
 					small: 'assets/images/products/different_products/organizer2.jpg',
@@ -101,9 +111,18 @@ export class DifferentProductsComponent {
 			name: "Шорный пони",
 			images: [
 				{
-					small: 'assets/images/products/different_products/pony.jpg',
-					medium: 'assets/images/products/different_products/pony.jpg',
-					big: 'assets/images/products/different_products/pony.jpg'
+					small: 'assets/images/products/different_products/pony1.jpg',
+					medium: 'assets/images/products/different_products/pony1.jpg',
+					big: 'assets/images/products/different_products/pony1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/pony2.jpg',
+					medium: 'assets/images/products/different_products/pony2.jpg',
+					big: 'assets/images/products/different_products/pony2.jpg'
+				},{
+					small: 'assets/images/products/different_products/pony3.jpg',
+					medium: 'assets/images/products/different_products/pony3.jpg',
+					big: 'assets/images/products/different_products/pony3.jpg'
 				}
 			],
   	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки"', 

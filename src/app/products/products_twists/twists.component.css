@@ -2,7 +2,11 @@
     position: relative;
     padding: 20px 0 20px 0;
     text-align: justify;
-    background-color: rgb(210, 210, 210);
+    background-image: url(/assets/images/background_twists.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
 }
 
 .twists_block {

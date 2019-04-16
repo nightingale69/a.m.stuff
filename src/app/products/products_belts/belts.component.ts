@@ -11,15 +11,15 @@ export class BeltsComponent {
 	galleryOptions = [
 		{
 			width: '100%',
-			height: '350px',
+			height: '400px',
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 5,
-			thumbnailMargin: 0,
-			thumbnailsMargin: 0,
+			thumbnailsColumns: 4,
+			thumbnailMargin: 1,
+			thumbnailsMargin: 1,
 			thumbnailsArrows: true,
 			thumbnails: false,
-			preview: false,
-			previewAnimation: false,
+			preview: true,
+			previewAnimation: true,
 			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
 			arrowPrevIcon: 'fa fa-arrow-left',
@@ -47,7 +47,7 @@ export class BeltsComponent {
 	belts: { name: string, images: { small: any, medium: any, big: any }[], description: string, price: string }[] = 
   	[
 		{
-			name: "Ремень мужской с классической латунной пряжкой",
+			name: "Классическая латунная пряжка",
 			images: [
 				{
 					small: 'assets/images/products/belts/classic_buckle1.jpg',
@@ -58,13 +58,23 @@ export class BeltsComponent {
 					small: 'assets/images/products/belts/classic_buckle2.jpg',
 					medium: 'assets/images/products/belts/classic_buckle2.jpg',
 					big: 'assets/images/products/belts/classic_buckle2.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/classic_buckle3.jpg',
+					medium: 'assets/images/products/belts/classic_buckle3.jpg',
+					big: 'assets/images/products/belts/classic_buckle3.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/classic_buckle4.jpg',
+					medium: 'assets/images/products/belts/classic_buckle4.jpg',
+					big: 'assets/images/products/belts/classic_buckle4.jpg'
 				}
 			],
   	  	  	description: 'Изготовлен из натуральной прочной кожи. Этот пояс можно носить как с классическим костюмом, так и с джинсами. Сдержанный и лаконичный, подойдет к любой одежде, не выйдет из моды. Возможно использовать на разные обхваты талии благодаря довольно большому количеству отверстий.', 
   	  	  	price: '2300 ₽'
 		},
   	  	{
-			name: "Ремень с пряжкой ручной ковки",
+			name: "Пряжка ручной ковки",
 			images: [
 				{
 					small: 'assets/images/products/belts/hand-forged_buckle1.jpg',
@@ -75,9 +85,19 @@ export class BeltsComponent {
 					small: 'assets/images/products/belts/hand-forged_buckle2.jpg',
 					medium: 'assets/images/products/belts/hand-forged_buckle2.jpg',
 					big: 'assets/images/products/belts/hand-forged_buckle2.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle3.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle3.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle3.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle4.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle4.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle4.jpg'
 				}
 			],
-  	  	  	description: 'Эксклюзивная кованая квадратная пряжка из нержавеющей стали либо из латуни. Пряжка выполнена методом ручной ковки. Характерный вид кованых, а не штампованных, предметов, результат трудоемкой отделки. Такой дизайн – это уже дизайн уровня украшений, а не обычной фурнитуры. Ременная полоса выполнена из толстой высококачественной натуральной кожи.', 
+  	  	  	description: 'Эксклюзивная кованая квадратная пряжка из нержавеющей стали либо из латуни. Пряжка выполнена методом ручной ковки. Характерный вид кованых, а не штампованных, предметов, результат трудоемкой отделки. Ременная полоса выполнена из толстой высококачественной натуральной кожи.', 
   	  	  	price: '3000 ₽'
 		}
 	];
