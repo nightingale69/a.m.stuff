@@ -11,19 +11,19 @@ export class WalletsComponent {
 
     galleryOptions = [
 		{
-			width: '670px',
+			width: '500px',
 			height: '400px',
-			image: false,
+			image: true,
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 3,
-			thumbnailsRows: 2,
-			thumbnailMargin: 10,
-			thumbnailsMargin: 0,
+			thumbnailsColumns: 5,
+			thumbnailsRows: 1,
+			thumbnailMargin: 3,
+			thumbnailsMargin: 3,
 			thumbnailsArrows: true,
 			thumbnails: true,
 			preview: true,
 			previewAnimation: true,
-			imageArrowsAutoHide: true,
+			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
 			arrowPrevIcon: 'fa fa-arrow-left',
 			arrowNextIcon: 'fa fa-arrow-right'

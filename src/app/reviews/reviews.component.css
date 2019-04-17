@@ -3,9 +3,7 @@
     width: 100%;
     padding: 20px 0 20px 0;
     text-align: center;
-    background-image: url(/assets/images/paper.jpg);
-    background-repeat: repeat;
-    background-size: 40%;
+    background-color: rgb(37, 37, 37);
 }
 
 .reviews_title {

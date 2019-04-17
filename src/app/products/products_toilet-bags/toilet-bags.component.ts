@@ -8,61 +8,21 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryLayo
 })
 export class ToiletBagsComponent {
 
-  	toilet_bagsa = 
-  	[
-  	  	{
-		    url: "blue_toilet_bag",
-  	    	image: "assets/images/products/toilet_bags/tbag_blue.jpg",
-  	    	description: 'Несессер синий', 
-  	    	price: '1000 ₽'
-  	  	},
-  	  	{
-		    url: "burgundy_toilet_bag",
-  	    	image: "assets/images/products/toilet_bags/tbag_burgundy.jpg",
-  	    	description: 'Несессер бордовый', 
-  	    	price: '1000 ₽'
-  	  	},
-  	  	{
-		    url: "light_brown_toilet_bag",
-  	    	image: "assets/images/products/toilet_bags/tbag_light_brown.jpg",
-  	    	description: 'Несессер светло-коричневый', 
-  	    	price: '1000 ₽'
-  	  	},
-  	  	{
-		    url: "dark_brown_toilet_bag",
-  	    	image: "assets/images/products/toilet_bags/tbag_dark_brown.jpg",
-  	    	description: 'Несессер тёмно-коричневый', 
-  	    	price: '1000 ₽'
-  	  	},
-  	  	{
-		    url: "brown_toilet_bag",
-  	    	image:  "assets/images/products/toilet_bags/tbag_brown.jpg",
-  	    	description: 'Несессер коричневый', 
-  	    	price: '1000 ₽'
-      	},
-      	{
-		    url: "red_toilet_bag",
-  	    	image:  "assets/images/products/toilet_bags/tbag_red.jpg",
-  	    	description: 'Несессер красный', 
-  	    	price: '1000 ₽'
-  	  	}
-	];
-
 	galleryOptions = [
 		{
-			width: '670px',
+			width: '500px',
 			height: '400px',
-			image: false,
+			image: true,
 			imageSize: NgxGalleryImageSize.Cover,
-			thumbnailsColumns: 3,
-			thumbnailsRows: 2,
-			thumbnailMargin: 10,
-			thumbnailsMargin: 0,
+			thumbnailsColumns: 6,
+			thumbnailsRows: 1,
+			thumbnailMargin: 3,
+			thumbnailsMargin: 3,
 			thumbnailsArrows: true,
 			thumbnails: true,
 			preview: true,
 			previewAnimation: true,
-			imageArrowsAutoHide: true,
+			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
 			arrowPrevIcon: 'fa fa-arrow-left',
 			arrowNextIcon: 'fa fa-arrow-right'
@@ -73,7 +33,7 @@ export class ToiletBagsComponent {
 			width: '600px',
 			height: '400px',
 			imagePercent: 80,
-			thumbnailsPercent: 20,
+			thumbnailsPercent: 20
 		},
 		// max-width 400
 		{

@@ -18,7 +18,7 @@ export class DifferentProductsComponent {
 			thumbnailsMargin: 0,
 			thumbnailsArrows: true,
 			thumbnails: false,
-			preview: false,
+			preview: true,
 			previewAnimation: false,
 			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
@@ -65,8 +65,62 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/sharpening_belt3.jpg'
 				}
 			],
-  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв', 
+  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв имеет металлическое сварное кольцо для удержания ремня рукой при правке и карабин для крепления. ', 
   	  	  	price: '1000 ₽'
+		},
+		{
+			name: "Классическая латунная пряжка",
+			images: [
+				{
+					small: 'assets/images/products/belts/classic_buckle1.jpg',
+					medium: 'assets/images/products/belts/classic_buckle1.jpg',
+					big: 'assets/images/products/belts/classic_buckle1.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/classic_buckle2.jpg',
+					medium: 'assets/images/products/belts/classic_buckle2.jpg',
+					big: 'assets/images/products/belts/classic_buckle2.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/classic_buckle3.jpg',
+					medium: 'assets/images/products/belts/classic_buckle3.jpg',
+					big: 'assets/images/products/belts/classic_buckle3.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/classic_buckle4.jpg',
+					medium: 'assets/images/products/belts/classic_buckle4.jpg',
+					big: 'assets/images/products/belts/classic_buckle4.jpg'
+				}
+			],
+  	  	  	description: 'Изготовлен из натуральной прочной кожи. Этот пояс можно носить как с классическим костюмом, так и с джинсами. Сдержанный и лаконичный, подойдет к любой одежде, не выйдет из моды.', 
+  	  	  	price: '2300 ₽'
+		},
+		{
+			name: "Пряжка ручной ковки",
+			images: [
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle1.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle1.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle1.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle2.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle2.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle2.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle3.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle3.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle3.jpg'
+				},
+				{
+					small: 'assets/images/products/belts/hand-forged_buckle4.jpg',
+					medium: 'assets/images/products/belts/hand-forged_buckle4.jpg',
+					big: 'assets/images/products/belts/hand-forged_buckle4.jpg'
+				}
+			],
+  	  	  	description: 'Эксклюзивная кованая квадратная пряжка из нержавеющей стали, либо из латуни. Ременная полоса выполнена из толстой высококачественной натуральной кожи.', 
+  	  	  	price: '3000 ₽'
 		},
 		{
 			name: "Подставка-органайзер",
@@ -87,7 +141,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/organizer2.jpg'
 				}
 			],
-  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Возможно добавление Вашей надписи', 
+  	  	  	description: 'В лаконичном дизайне максимальная функциональность. Отличный вариант подарка другу, коллеге, боссу. Возможно добавление вашей надписи.', 
   	  	  	price: '1600 ₽'
 		},
 		{
@@ -104,7 +158,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/template2.jpg'
 				}
 			],
-  	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм', 
+  	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм. Шаблоны подходят для контуровки обоих концов ремня и разметки под пробивку отверстий и установку пряжки на ременные винты.', 
   	  	  	price: '700 ₽'
 		},
 		{
@@ -125,7 +179,7 @@ export class DifferentProductsComponent {
 					big: 'assets/images/products/different_products/pony3.jpg'
 				}
 			],
-  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки"', 
+  	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки". Лёгкий вес, оптимальные размеры, высокое качество и функционал.', 
   	  	  	price: '2000 ₽'
 		},
 		{
