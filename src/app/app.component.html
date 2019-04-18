@@ -7,9 +7,9 @@
 				<p class="logo_title" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p>
 			</li>
 			<li><p [ngx-scroll-to]="'twists'" routerLinkActive="active">Скрутки</p></li>
-			<li><p [ngx-scroll-to]="'toilet-bags'" routerLinkActive="active">Несессеры</p></li>
-			<li><p [ngx-scroll-to]="'wallets'" routerLinkActive="active">Кошельки</p></li>
-			<li><p [ngx-scroll-to]="'different'" routerLinkActive="active">Различные товары</p></li>
+			<li><p [ngx-scroll-to]="'different'" routerLinkActive="active">Прочие изделия</p></li>
+			<li><p [ngx-scroll-to]="'delivery'" routerLinkActive="active">Доставка и оплата</p></li>
+			<li><p [ngx-scroll-to]="'contact'" routerLinkActive="active">Контакты</p></li>
 		</ul>
 	</header>
 	<main class="main">
@@ -17,11 +17,10 @@
 		<app-description id="home"></app-description>
 		<app-intro></app-intro>
 		<app-twists id="twists"></app-twists>
-		<app-toilet-bags id="toilet-bags"></app-toilet-bags>
-		<app-wallets id="wallets"></app-wallets>
 		<app-different-products id="different"></app-different-products>
-		<app-reviews id="reviews"></app-reviews>
+		<app-delivery id="delivery"></app-delivery>
     	<app-contact id="contact"></app-contact>
+		<app-reviews id="reviews"></app-reviews>
 	</main>
 	<footer class="footer">
 		<!--<div class="acquisition">

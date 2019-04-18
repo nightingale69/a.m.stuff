@@ -1,4 +1,4 @@
-<div class="acquisition">
+<!--<div class="acquisition">
 	<div class="delivery">
 	  	<div class="title-delivery title">
 			<p>
@@ -26,5 +26,23 @@
 	  	  	<p>{{ item.comment }}</p>
 	  	</div>
 	</div>
+</div>-->
+
+<div class="delivery">
+    <div class="delivery_title title">
+        <p>Доставка</p>
+    </div>
+
+    <div class="delivery_container">
+        <div class="delivery_item" *ngFor="let item of deliveries">
+			<p style="font-weight: bold;">{{ item.place }}</p>
+			<p>{{ item.where1 }} {{ item.price1 }}</p>
+			<p>{{ item.comment1 }}</p>
+			<p>{{ item.where2 }} {{ item.price2 }}</p>
+			<p>{{ item.comment2 }}</p>
+			<p>{{ item.where3 }} {{ item.price3 }}</p>
+			<p>{{ item.comment3 }}</p>
+	  </div>
+    </div>
 </div>
 

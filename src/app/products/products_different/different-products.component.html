@@ -1,9 +1,10 @@
 <div class="different-products">
     <div class="different_title title">
-        <p>Различные товары</p>
+        <p>Прочие изделия</p>
     </div>
+
     <div class="different-products_container">
-        <div class="different-products_block block" *ngFor="let item of different_products">
+        <div class="different-products_block block" *ngFor="let item of different_products_leather">
             <div class="block_image">
                 <ngx-gallery [options]="galleryOptions" [images]="item.images"></ngx-gallery>
             </div>
@@ -12,6 +13,12 @@
             </div>
             <div class="block_description">
                 <p>{{item.description}}</p>
+            </div>
+            <div class="block_dimensions">
+                <p>Размеры: {{item.dimensions}}</p>
+            </div>
+            <div class="block_dimensions">
+                <p>{{item.colors}}</p>
             </div>
             <div class="block_price">
                 <p>{{item.price}}</p>

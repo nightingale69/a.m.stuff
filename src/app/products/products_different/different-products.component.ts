@@ -22,8 +22,8 @@ export class DifferentProductsComponent {
 			previewAnimation: false,
 			imageArrowsAutoHide: false,
 			previewCloseOnClick: true,
-			arrowPrevIcon: 'fa fa-arrow-left',
-			arrowNextIcon: 'fa fa-arrow-right'
+			arrowPrevIcon: 'fa fa-arrow-circle-o-left',
+			arrowNextIcon: 'fa fa-arrow-circle-o-right'
 		},
 		// max-width 800
 		{
@@ -44,29 +44,114 @@ export class DifferentProductsComponent {
 		}
 	];
 
-	different_products: { name: string, images: { small: any, medium: any, big: any }[], description: string, price: string }[] = 
+
+	different_products_leather: { name: string, images: { small: any, medium: any, big: any }[], description: string, dimensions: string, colors:string, price: string }[] = 
   	[
-  	  	{
-			name: "Ремень для заточки",
+		{
+			name: "Несессер",
 			images: [
 				{
-					small: 'assets/images/products/different_products/sharpening_belt1.jpg',
-					medium: 'assets/images/products/different_products/sharpening_belt1.jpg',
-					big: 'assets/images/products/different_products/sharpening_belt1.jpg'
+					small: 'assets/images/products/toilet_bags/tbag_blue.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_blue.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_blue.jpg'
 				},
 				{
-					small: 'assets/images/products/different_products/sharpening_belt2.jpg',
-					medium: 'assets/images/products/different_products/sharpening_belt2.jpg',
-					big: 'assets/images/products/different_products/sharpening_belt2.jpg'
+					small: 'assets/images/products/toilet_bags/tbag_burgundy.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_burgundy.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_burgundy.jpg'
 				},
 				{
-					small: 'assets/images/products/different_products/sharpening_belt3.jpg',
-					medium: 'assets/images/products/different_products/sharpening_belt3.jpg',
-					big: 'assets/images/products/different_products/sharpening_belt3.jpg'
+					small: 'assets/images/products/toilet_bags/tbag_light_brown.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_light_brown.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_light_brown.jpg'
+				},
+				{
+					small: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_dark_brown.jpg'
+				},
+				{
+					small: 'assets/images/products/toilet_bags/tbag_brown.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_brown.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_brown.jpg'
+				},
+				{
+					small: 'assets/images/products/toilet_bags/tbag_red.jpg',
+					medium: 'assets/images/products/toilet_bags/tbag_red.jpg',
+					big: 'assets/images/products/toilet_bags/tbag_red.jpg'
 				}
 			],
-  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв имеет металлическое сварное кольцо для удержания ремня рукой при правке и карабин для крепления. ', 
-  	  	  	price: '1000 ₽'
+  	  	  	description: 'Незаменимый помощник в любой поездке. Функциональный, стильный, эксклюзивный несессер из натуральной кожи не займёт много места, но существенно упростит вашу жизнь.', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '1000 ₽'
+		},
+		{
+			name: "Кархолдер",
+			images: [
+				{
+					small: 'assets/images/products/wallets/wallet_blue.jpg',
+					medium: 'assets/images/products/wallets/wallet_blue.jpg',
+					big: 'assets/images/products/wallets/wallet_blue.jpg'
+				},
+				{
+					small: 'assets/images/products/wallets/wallet_brown.jpg',
+					medium: 'assets/images/products/wallets/wallet_brown.jpg',
+					big: 'assets/images/products/wallets/wallet_brown.jpg'
+				},
+				{
+					small: 'assets/images/products/wallets/wallet_dark_brown.jpg',
+					medium: 'assets/images/products/wallets/wallet_dark_brown.jpg',
+					big: 'assets/images/products/wallets/wallet_dark_brown.jpg'
+				},
+				{
+					small: 'assets/images/products/wallets/wallet_orange.jpg',
+					medium: 'assets/images/products/wallets/wallet_orange.jpg',
+					big: 'assets/images/products/wallets/wallet_orange.jpg'
+				},
+				{
+					small: 'assets/images/products/wallets/wallet_red.jpg',
+					medium: 'assets/images/products/wallets/wallet_red.jpg',
+					big: 'assets/images/products/wallets/wallet_red.jpg'
+				}
+			],
+  	  	  	description: 'Миниатюрный, но вместительный. В него можно положить кредитки, бумажные купюры, водительское удостоверение. Если Вы любите небольшие и функциональные вещи - это будет для Вас настоящей находкой.', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '900 ₽'
+		},
+		{
+			name: "Монетница",
+			images: [
+				{
+					small: 'assets/images/products/different_products/coin_box.jpg',
+					medium: 'assets/images/products/different_products/coin_box.jpg',
+					big: 'assets/images/products/different_products/coin_box.jpg'
+				}
+			],
+  	  	  	description: 'Короткое описание этой монетницы. Какова цена?', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '? ₽'
+		},
+		{
+			name: "Кейс для документов",
+			images: [
+				{
+					small: 'assets/images/products/different_products/case1.jpg',
+					medium: 'assets/images/products/different_products/case1.jpg',
+					big: 'assets/images/products/different_products/case1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/case2.jpg',
+					medium: 'assets/images/products/different_products/case2.jpg',
+					big: 'assets/images/products/different_products/case2.jpg'
+				}
+			],
+  	  	  	description: 'Короткое описание этого кейса. Какова цена?', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '? ₽'
 		},
 		{
 			name: "Классическая латунная пряжка",
@@ -93,7 +178,9 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Изготовлен из натуральной прочной кожи. Этот пояс можно носить как с классическим костюмом, так и с джинсами. Сдержанный и лаконичный, подойдет к любой одежде, не выйдет из моды.', 
-  	  	  	price: '2300 ₽'
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '2300 ₽'
 		},
 		{
 			name: "Пряжка ручной ковки",
@@ -120,7 +207,62 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Эксклюзивная кованая квадратная пряжка из нержавеющей стали, либо из латуни. Ременная полоса выполнена из толстой высококачественной натуральной кожи.', 
-  	  	  	price: '3000 ₽'
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '3000 ₽'
+		},
+		{
+			name: "Ремень для заточки",
+			images: [
+				{
+					small: 'assets/images/products/different_products/sharpening_belt1.jpg',
+					medium: 'assets/images/products/different_products/sharpening_belt1.jpg',
+					big: 'assets/images/products/different_products/sharpening_belt1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/sharpening_belt2.jpg',
+					medium: 'assets/images/products/different_products/sharpening_belt2.jpg',
+					big: 'assets/images/products/different_products/sharpening_belt2.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/sharpening_belt3.jpg',
+					medium: 'assets/images/products/different_products/sharpening_belt3.jpg',
+					big: 'assets/images/products/different_products/sharpening_belt3.jpg'
+				}
+			],
+  	  	  	description: 'Ремень из натуральной кожи КРС растительного дубления для заточки ножей и опасных бритв имеет металлическое сварное кольцо для удержания ремня рукой при правке и карабин для крепления. ', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '1000 ₽'
+		},
+		{
+			name: "Браслет",
+			images: [
+				{
+					small: 'assets/images/products/different_products/bracelet1.jpg',
+					medium: 'assets/images/products/different_products/bracelet1.jpg',
+					big: 'assets/images/products/different_products/bracelet1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/bracelet2.jpg',
+					medium: 'assets/images/products/different_products/bracelet2.jpg',
+					big: 'assets/images/products/different_products/bracelet2.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/bracelet3.jpg',
+					medium: 'assets/images/products/different_products/bracelet3.jpg',
+					big: 'assets/images/products/different_products/bracelet3.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/bracelet4.jpg',
+					medium: 'assets/images/products/different_products/bracelet4.jpg',
+					big: 'assets/images/products/different_products/bracelet4.jpg'
+				}
+			],
+  	  	  	description: 'Короткое описание этого браслета. Какова цена?', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '? ₽'
 		},
 		{
 			name: "Подставка-органайзер",
@@ -142,7 +284,9 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'В лаконичном дизайне максимальная функциональность. Отличный вариант подарка другу, коллеге, боссу. Возможно добавление вашей надписи.', 
-  	  	  	price: '1600 ₽'
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '1600 ₽'
 		},
 		{
 			name: "Набор шаблонов",
@@ -159,7 +303,9 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм. Шаблоны подходят для контуровки обоих концов ремня и разметки под пробивку отверстий и установку пряжки на ременные винты.', 
-  	  	  	price: '700 ₽'
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '700 ₽'
 		},
 		{
 			name: "Шорный пони",
@@ -180,19 +326,9 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки". Лёгкий вес, оптимальные размеры, высокое качество и функционал.', 
-  	  	  	price: '2000 ₽'
-		},
-		{
-			name: "Монетница",
-			images: [
-				{
-					small: 'assets/images/products/different_products/coin_box.jpg',
-					medium: 'assets/images/products/different_products/coin_box.jpg',
-					big: 'assets/images/products/different_products/coin_box.jpg'
-				}
-			],
-  	  	  	description: 'Короткое описание этой монетницы. Какова цена?', 
-  	  	  	price: '? ₽'
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '2000 ₽'
 		}
 	];
 }
