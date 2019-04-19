@@ -7,16 +7,6 @@
 	padding: 20px 0 50px 0;
 }
 
-.contact_title {
-	position: relative;
-    width: 100%;
-    font-size: 50px;
-    font-family: 'Lobster', 'arial', serif;
-    text-align: center;
-    color: rgb(255, 190, 0);
-    text-shadow: 1px 1px 1px rgb(255, 190, 0);
-}
-
 .contact_content {
 	font-size: 20px;
 	line-height: 30px;

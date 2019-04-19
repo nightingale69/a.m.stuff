@@ -28,7 +28,6 @@
 }
 .header_menu p:hover{
     color: rgb(255, 190, 0);
-    text-shadow: 1px 1px 1px rgb(255, 190, 0);
 }
 
 .logo_title {
@@ -43,7 +42,7 @@
     font-size: 20px;
     font-family: 'Army', 'arial', serif;
     color: rgb(210, 210, 210);
-    text-decoration: underline rgb(255, 190, 0);
+    text-decoration: underline #945120;
 }
 
 .active {

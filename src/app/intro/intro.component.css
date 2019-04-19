@@ -7,16 +7,6 @@
     border-bottom: 1px solid rgb(255, 190, 0);
 }
 
-.intro_title {
-    position: relative;
-    width: 100%;
-    font-size: 50px;
-    font-family: 'Lobster', 'arial', serif;
-    text-align: center;
-    color: rgb(255, 190, 0);
-    text-shadow: 1px 1px 1px rgb(255, 190, 0);
-}
-
 .intro_logo {
     position: absolute;
     top: 50px;
