@@ -1,0 +1,38 @@
+<div class="twists">
+    <div class="twists_title title">
+        <p>Скрутки</p>
+    </div>
+    <p class="paragraph">
+        Обязательный аксессуар для профессионального повара и любителя.
+        Выполнена из натуральной 100% кожи крупного рогатого скота. 
+        Внутри ножи вкладываются в отстроченные отделения. Полотно сворачивается и фиксируется двумя ремнями с пряжками.
+        Изготавливается с отстёгивающимся ремнём для транспортировки через плечо.
+        Возможно изготовление скрутки на заказ на необходимое именно Вам колличество ножей.
+        P.S. Скрутка продается без ножей!
+        Так же имеется лазерная гравировка с различными шрифтами(возможна работа по Вашему индивидуальному шрифту).
+    </p>    
+    <div class="twists_container">
+        <div class="twists_block block" *ngFor="let item of twists">
+            <div class="block_image">
+                <ngx-gallery [options]="galleryOptions" [images]="item.images"></ngx-gallery>
+            </div>
+            <div class="block_name">
+                <p>{{item.name}}</p>
+            </div>
+            <div class="block_description">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="block_dimensions">
+                <p>{{item.dimensions}}</p>
+            </div>
+            <div class="block_colors">
+                <p>{{item.colors}}</p>
+            </div>
+            <div class="block_price">
+                <p>{{item.price}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,27 +1,40 @@
-.title-delivery,
-.title-payment {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 20px 10px 20px;
-    text-align: left;
+.delivery {
+    position: relative;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(59, 59, 59);
+    background-color: #d2d2c7;
 }
 
-.delivery,
-.payment {
-    position: relative;
+.delivery::after {
+    content: '';
     display: inline-block;
-    width: 300px;
+    width: 100%;
+    height: 1px;
+    background: rgb(148, 81, 32);
+    margin: 100px 0 0 0;
+}
+
+.delivery_container,
+.payment_container {
+    width: 400px;
+    display: inline-block;
+    text-align: left;
     vertical-align: top;
-    font-size: 10px;
+}
+
+.delivery_container {
+    padding-right: 20px;
+    border-right: 1px dashed rgb(148, 81, 32);
+}
+
+.payment_container {
+    padding-left: 20px;
 }
 
 .delivery_item,
 .payment_item {
-    margin: 0 20px 20px 20px;
-    vertical-align: top;
-    text-align: left;
-}
-
-.payment_item {
-    width: 40%;
+    padding-top: 20px;
 }

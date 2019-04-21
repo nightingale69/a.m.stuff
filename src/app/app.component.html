@@ -2,9 +2,9 @@
 	<header class="header">
 		<ul class="header_menu">
 			<li class="logo">
-				<img style="position: relative;	top: 23px; z-index: 99;" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
-				src="assets/images/description/logo.png" width="58px" height="58px" alt="logo">
-				<p class="logo_title" [ngx-scroll-to]="'top'" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">A.M.STUFF</p>
+				<img style="position: relative;	top: 23px; z-index: 99;" [ngx-scroll-to]="'top'"
+				src="assets/images/logo.png" width="58px" height="58px" alt="logo">
+				<p class="logo_title" [ngx-scroll-to]="'top'">A.M.STUFF</p>
 			</li>
 			<li><p [ngx-scroll-to]="'twists'" routerLinkActive="active">Скрутки</p></li>
 			<li><p [ngx-scroll-to]="'different'" routerLinkActive="active">Прочие изделия</p></li>
@@ -13,48 +13,15 @@
 		</ul>
 	</header>
 	<main class="main">
-		<!--<router-outlet></router-outlet>-->
 		<app-description id="home"></app-description>
 		<app-intro></app-intro>
 		<app-twists id="twists"></app-twists>
 		<app-different-products id="different"></app-different-products>
 		<app-delivery id="delivery"></app-delivery>
-    	<app-contact id="contact"></app-contact>
 		<app-reviews id="reviews"></app-reviews>
+    	<app-contact id="contact"></app-contact>
 	</main>
 	<footer class="footer">
-		<!--<div class="acquisition">
-			<div class="delivery">
-				<div class="title-delivery">
-					<p>
-						Доставка
-					</p>
-				</div>
-				  <div class="delivery_item" *ngFor="let item of deliveries">
-						<p style="font-weight: bold;">{{ item.place }}</p>
-						<p>{{ item.where1 }} {{ item.price1 }}</p>
-						<p>{{ item.comment1 }}</p>
-						<p>{{ item.where2 }} {{ item.price2 }}</p>
-						<p>{{ item.comment2 }}</p>
-						<p>{{ item.where3 }} {{ item.price3 }}</p>
-						<p>{{ item.comment3 }}</p>
-				  </div>
-			</div>
-			<div class="payment">
-				  <div class="title-payment">
-					<p>
-						Оплата
-					</p>
-				</div>
-				  <div class="payment_item" *ngFor="let item of payment">
-						<p style="font-weight: bold">{{ item.how }}</p>
-						<p>{{ item.comment }}</p>
-				  </div>
-			</div>
-		</div>-->
-		<!--<div class="socials">
-			
-		</div>-->
 		<div class="copyright">
 			<p>Мануфактура "A.M.STUFF"</p>
 		</div>

@@ -1,0 +1,72 @@
+.twists {
+    position: relative;
+    padding: 20px 0 50px 0;
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+}
+
+.twists::after {
+    content: '';
+    display: inline-block;
+    width: 90%;
+    height: 1px;
+    background: rgb(148, 81, 32);
+    margin: 50px 0 0 0;
+}
+
+.paragraph {
+    font-family: 'Lobster', 'arial', serif;
+    font-size: 20px;
+    padding: 20px 100px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.twists_block {
+    display: inline-block;
+    width: fit-content;
+    text-align: left;
+    margin: 0 40px 40px 0;
+    background-color: rgb(232, 232, 232);
+    box-shadow: 0px 0px 15px -5px rgb(0, 0, 0);
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.block_image,
+.container_content {
+    width: fit-content;
+    vertical-align: top;
+}
+
+.block_name,
+.block_description,
+.block_dimensions,
+.block_colors,
+.block_price {
+    padding: 0 20px;
+}
+
+.block_name p {
+    min-height: 35px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(148, 81, 32);
+    padding-top: 10px;
+}
+
+.block_description p {
+    min-height: 140px;
+    font-size: 15px;
+}
+
+.block_dimensions,
+.block_colors {
+    min-height: 40px;
+    font-size: 15px;
+}
+
+.block_price p {
+    min-height: 30px;
+    font-weight: bold;
+    color: #005600;
+}

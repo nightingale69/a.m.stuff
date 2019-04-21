@@ -15,33 +15,18 @@ a {
 }
 
 @font-face {
-    font-family: RobotoSlab; /* Имя шрифта */
-    src: url(assets/fonts/RobotoSlab-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: RobotoSlab;
+    src: url(assets/fonts/RobotoSlab-Regular.ttf);
 }
 
 @font-face {
-  font-family: Lobster; /* Имя шрифта */
-  src: url(assets/fonts/Lobster-Regular.ttf); /* Путь к файлу со шрифтом */
+  font-family: Lobster;
+  src: url(assets/fonts/Lobster-Regular.ttf);
 }
 
 @font-face {
-    font-family: Exo2-Regular; /* Имя шрифта */
-    src: url(assets/fonts/Exo2-Regular.ttf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: LeArchitect; /* Имя шрифта */
-    src: url(assets/fonts/LeArchitect.ttf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: Caveat-Regular; /* Имя шрифта */
-    src: url(assets/fonts/Caveat-Regular.ttf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: Army; /* Имя шрифта */
-    src: url(assets/fonts/Army_Wide.ttf); /* Путь к файлу со шрифтом */
+    font-family: Army;
+    src: url(assets/fonts/Army_Wide.ttf);
 }
 
 .app-root__load {
@@ -83,8 +68,8 @@ a {
   font-size: 50px;
   font-family: 'Lobster', 'arial', serif;
   text-align: center;
-  color: #945120;
-  text-shadow: 1px 1px 2px #945120;
+  color: rgb(37, 37, 37);
+  text-shadow: 1px 1px 2px rgb(37, 37, 37);
 }
 
 .products_info_block h3 {
@@ -99,18 +84,11 @@ a {
     padding-top: 20px;
     color: rgb(255, 255, 255);
 }
-
 .products_info_block p:nth-child(4) {
 	padding-top: 10px;
 	font-family: 'Lobster', 'arial', serif;
   	font-size: 25px;
   	color: rgb(255, 255, 255)
-}
-
-.gallery_block {
-	/*border: 3px solid wheat;
-	border-bottom: 0px;
-	background-color: wheat*/
 }
 
 @keyframes front {

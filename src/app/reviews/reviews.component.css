@@ -1,17 +1,17 @@
 .content__reviews {
     position: relative;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 100px 0;
     text-align: center;
-    background-color: rgb(37, 37, 37);
+    background-color: #d2d2c7;
 }
 
 .reviews__item {
     display: inline-block;
     margin: 20px;
     vertical-align: top;
-    background-color: rgb(37, 37, 37);
-    box-shadow: 0px 4px 14px 1px rgb(0, 0, 0);
+    background-color: rgb(232, 232, 232);
+    box-shadow: 0px 0px 15px -5px rgb(0, 0, 0);
 }
 
 .photo {
@@ -43,5 +43,5 @@
 
 .description_review q {
     font-size: 14px;
-    color: white;
+    color: rgb(49, 49, 49);
 }

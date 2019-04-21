@@ -49,14 +49,6 @@
     outline: none
 }
 
-/*.header_menu p:hover {
-    border-bottom: 3px solid rgb(95, 70, 0);
-}
-
-.header_menu p.active {
-    border-bottom: 3px solid rgb(95, 70, 0);
-}*/
-
 .main {
     position: relative;
     background-color: rgb(37, 37, 37);
@@ -79,7 +71,7 @@
     line-height: 0px;
     z-index: 2;
     text-align: center;
-    border-top: 1px solid rgb(255, 190, 0);
+    border-top: 3px solid rgb(255, 190, 0);
 }
 
 .acquisition,
