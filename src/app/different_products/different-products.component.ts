@@ -124,15 +124,35 @@ export class DifferentProductsComponent {
 			name: "Монетница",
 			images: [
 				{
-					small: 'assets/images/products/different_products/coin_box.jpg',
-					medium: 'assets/images/products/different_products/coin_box.jpg',
-					big: 'assets/images/products/different_products/coin_box.jpg'
+					small: 'assets/images/products/different_products/coin_box1.jpg',
+					medium: 'assets/images/products/different_products/coin_box1.jpg',
+					big: 'assets/images/products/different_products/coin_box1.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/coin_box2.jpg',
+					medium: 'assets/images/products/different_products/coin_box2.jpg',
+					big: 'assets/images/products/different_products/coin_box2.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/coin_box3.jpg',
+					medium: 'assets/images/products/different_products/coin_box3.jpg',
+					big: 'assets/images/products/different_products/coin_box3.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/coin_box4.jpg',
+					medium: 'assets/images/products/different_products/coin_box4.jpg',
+					big: 'assets/images/products/different_products/coin_box4.jpg'
+				},
+				{
+					small: 'assets/images/products/different_products/coin_box5.jpg',
+					medium: 'assets/images/products/different_products/coin_box5.jpg',
+					big: 'assets/images/products/different_products/coin_box5.jpg'
 				}
 			],
-  	  	  	description: 'Короткое описание этой монетницы. Какова цена?', 
+  	  	  	description: 'Конструкция позволяет открывать монетницу с двух сторон. Идеально подходит не только для металлических денег, но и для флешек, для наушников и других мелких предметов. Кошелек удобно разместится в сумке или кармане.', 
 			dimensions: '90x90x90',	  
 			colors: 'Цвета: ',
-			price: '? ₽'
+			price: '400 ₽'
 		},
 		{
 			name: "Кейс для документов",
@@ -211,7 +231,7 @@ export class DifferentProductsComponent {
 			colors: 'Цвета: ',
 			price: '3000 ₽'
 		},
-		{
+		/*{
 			name: "Ремень для заточки",
 			images: [
 				{
@@ -263,7 +283,7 @@ export class DifferentProductsComponent {
 			dimensions: '90x90x90',	  
 			colors: 'Цвета: ',
 			price: '? ₽'
-		},
+		},*/
 		{
 			name: "Подставка-органайзер",
 			images: [
@@ -329,6 +349,34 @@ export class DifferentProductsComponent {
 			dimensions: '90x90x90',	  
 			colors: 'Цвета: ',
 			price: '2000 ₽'
+		},
+		{
+			name: "Сеттер",
+			images: [
+				{
+					small: 'assets/images/products/different_products/setter.jpg',
+					medium: 'assets/images/products/different_products/setter.jpg',
+					big: 'assets/images/products/different_products/setter.jpg'
+				}
+			],
+  	  	  	description: 'Инструмент для установки полнотелых медных и латунных заклепок. Под клепки, у которых ножка 3,5 мм, длина ножки 13 мм. Одна сторона для опускания шайбы на ножку, вторая сторона для развальцовывания ножки.', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '1100 ₽'
+		},
+		{
+			name: "Набор линеек",
+			images: [
+				{
+					small: 'assets/images/products/different_products/ruler.jpg',
+					medium: 'assets/images/products/different_products/ruler.jpg',
+					big: 'assets/images/products/different_products/ruler.jpg'
+				}
+			],
+  	  	  	description: 'Набор из 4 линеек из оргстекла. Линейки могут быть использованы для шитья, черчения. - линейки 18 см в диаметре; - толщина 4 мм Кроме того, линейки незаменимая вещь для квилтеров: при выстегивании простых геометрических узоров: полосок, решеток, овалов, кругов.', 
+			dimensions: '90x90x90',	  
+			colors: 'Цвета: ',
+			price: '900 ₽ (поштучно - 300 ₽)'
 		}
 	];
 }
