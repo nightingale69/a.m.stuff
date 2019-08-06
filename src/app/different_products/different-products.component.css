@@ -44,8 +44,10 @@
 }
 
 .block_dimensions {
+    margin-top: 10px;
     min-height: 40px;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .block_price p {

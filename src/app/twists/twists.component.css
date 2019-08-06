@@ -65,6 +65,11 @@
     font-size: 15px;
 }
 
+.block_dimensions {
+    font-weight: bold;
+    color: rgb(59, 59, 59);
+}
+
 .block_price p {
     min-height: 30px;
     font-weight: bold;

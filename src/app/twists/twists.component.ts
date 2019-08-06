@@ -67,7 +67,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '6000 ₽'
 		},
@@ -91,7 +91,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '6500 ₽'
 		},
@@ -115,7 +115,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '6700 ₽'
 		},
@@ -139,7 +139,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '6900 ₽'
 		},
@@ -163,7 +163,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '8900 ₽'
 		},
@@ -187,7 +187,7 @@ export class TwistsComponent {
 				}
 			],
   	  	  	description: 'Описание карманов, петель, фишек данной модели', 
-			dimensions: 'Размеры: 45/50',	  
+			dimensions: 'Размеры: 45x50 см',	  
 			colors: 'Цвета: ',
 			price: '15000 ₽'
 		}

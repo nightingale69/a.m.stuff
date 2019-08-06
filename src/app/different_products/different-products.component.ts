@@ -82,7 +82,7 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Незаменимый помощник в любой поездке. Функциональный, стильный, эксклюзивный несессер из натуральной кожи не займёт много места, но существенно упростит вашу жизнь.', 
-			dimensions: '90x90x90',	  
+			dimensions: '20х10х11 см',	  
 			colors: 'Цвета: ',
 			price: '1000 ₽'
 		},
@@ -116,7 +116,7 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Миниатюрный, но вместительный. В него можно положить кредитки, бумажные купюры, водительское удостоверение. Если Вы любите небольшие и функциональные вещи - это будет для Вас настоящей находкой.', 
-			dimensions: '90x90x90',	  
+			dimensions: '10х7 см',	  
 			colors: 'Цвета: ',
 			price: '900 ₽'
 		},
@@ -150,11 +150,11 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Конструкция позволяет открывать монетницу с двух сторон. Идеально подходит не только для металлических денег, но и для флешек, для наушников и других мелких предметов. Кошелек удобно разместится в сумке или кармане.', 
-			dimensions: '90x90x90',	  
+			dimensions: '10x10x10 см',	  
 			colors: 'Цвета: ',
 			price: '400 ₽'
 		},
-		{
+		/*{
 			name: "Кейс для документов",
 			images: [
 				{
@@ -172,7 +172,7 @@ export class DifferentProductsComponent {
 			dimensions: '90x90x90',	  
 			colors: 'Цвета: ',
 			price: '? ₽'
-		},
+		},*/
 		{
 			name: "Классическая латунная пряжка",
 			images: [
@@ -198,7 +198,7 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Изготовлен из натуральной прочной кожи. Этот пояс можно носить как с классическим костюмом, так и с джинсами. Сдержанный и лаконичный, подойдет к любой одежде, не выйдет из моды.', 
-			dimensions: '90x90x90',	  
+			dimensions: '20х15 мм',	  
 			colors: 'Цвета: ',
 			price: '2300 ₽'
 		},
@@ -227,7 +227,7 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Эксклюзивная кованая квадратная пряжка из нержавеющей стали, либо из латуни. Ременная полоса выполнена из толстой высококачественной натуральной кожи.', 
-			dimensions: '90x90x90',	  
+			dimensions: '30х15 мм',	  
 			colors: 'Цвета: ',
 			price: '3000 ₽'
 		},
@@ -283,7 +283,7 @@ export class DifferentProductsComponent {
 			dimensions: '90x90x90',	  
 			colors: 'Цвета: ',
 			price: '? ₽'
-		},*/
+		},
 		{
 			name: "Подставка-органайзер",
 			images: [
@@ -304,10 +304,10 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'В лаконичном дизайне максимальная функциональность. Отличный вариант подарка другу, коллеге, боссу. Возможно добавление вашей надписи.', 
-			dimensions: '90x90x90',	  
+			dimensions: '?',	  
 			colors: 'Цвета: ',
 			price: '1600 ₽'
-		},
+		},*/
 		{
 			name: "Набор шаблонов",
 			images: [
@@ -323,9 +323,37 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Набор содержит наиболее популярные размеры ременных заготовок 25, 30, 35, 38, 40, 44 мм. Шаблоны подходят для контуровки обоих концов ремня и разметки под пробивку отверстий и установку пряжки на ременные винты.', 
-			dimensions: '90x90x90',	  
+			dimensions: '45 см в длину',	  
 			colors: 'Цвета: ',
-			price: '700 ₽'
+			price: '600 ₽'
+		},
+		{
+			name: "Сеттер",
+			images: [
+				{
+					small: 'assets/images/products/different_products/setter.jpg',
+					medium: 'assets/images/products/different_products/setter.jpg',
+					big: 'assets/images/products/different_products/setter.jpg'
+				}
+			],
+  	  	  	description: 'Инструмент для установки полнотелых медных и латунных заклепок. Под клепки, у которых ножка 3,5 мм, длина ножки 13 мм. Одна сторона для опускания шайбы на ножку, вторая сторона для развальцовывания ножки.', 
+			dimensions: '10 см',	  
+			colors: 'Цвета: ',
+			price: '1100 ₽'
+		},
+		{
+			name: "Набор линеек",
+			images: [
+				{
+					small: 'assets/images/products/different_products/ruler.jpg',
+					medium: 'assets/images/products/different_products/ruler.jpg',
+					big: 'assets/images/products/different_products/ruler.jpg'
+				}
+			],
+  	  	  	description: 'Набор из 4 линеек из оргстекла. Линейки могут быть использованы для шитья, черчения. 18 см в диаметре, толщина - 4 мм Кроме того, линейки незаменимая вещь при выстегивании простых геометрических узоров: полосок, решеток, овалов, кругов.', 
+			dimensions: '18 см в диаметре',	  
+			colors: 'Цвета: ',
+			price: '900 ₽ (поштучно - 300 ₽)'
 		},
 		{
 			name: "Шорный пони",
@@ -346,37 +374,9 @@ export class DifferentProductsComponent {
 				}
 			],
   	  	  	description: 'Удобные тиски для шитья кожаных деталей, можно сказать, что это Ваши вторые "руки". Лёгкий вес, оптимальные размеры, высокое качество и функционал.', 
-			dimensions: '90x90x90',	  
+			dimensions: '37х33,5 см',	  
 			colors: 'Цвета: ',
 			price: '2000 ₽'
-		},
-		{
-			name: "Сеттер",
-			images: [
-				{
-					small: 'assets/images/products/different_products/setter.jpg',
-					medium: 'assets/images/products/different_products/setter.jpg',
-					big: 'assets/images/products/different_products/setter.jpg'
-				}
-			],
-  	  	  	description: 'Инструмент для установки полнотелых медных и латунных заклепок. Под клепки, у которых ножка 3,5 мм, длина ножки 13 мм. Одна сторона для опускания шайбы на ножку, вторая сторона для развальцовывания ножки.', 
-			dimensions: '90x90x90',	  
-			colors: 'Цвета: ',
-			price: '1100 ₽'
-		},
-		{
-			name: "Набор линеек",
-			images: [
-				{
-					small: 'assets/images/products/different_products/ruler.jpg',
-					medium: 'assets/images/products/different_products/ruler.jpg',
-					big: 'assets/images/products/different_products/ruler.jpg'
-				}
-			],
-  	  	  	description: 'Набор из 4 линеек из оргстекла. Линейки могут быть использованы для шитья, черчения. - линейки 18 см в диаметре; - толщина 4 мм Кроме того, линейки незаменимая вещь для квилтеров: при выстегивании простых геометрических узоров: полосок, решеток, овалов, кругов.', 
-			dimensions: '90x90x90',	  
-			colors: 'Цвета: ',
-			price: '900 ₽ (поштучно - 300 ₽)'
 		}
 	];
 }
