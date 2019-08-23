@@ -1,114 +1,141 @@
-.header {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    height: 70px;
-    list-style-type: none;
-    background-color: rgb(37, 37, 37);
-    border-bottom: 1px solid rgb(210, 210, 210);
-    z-index: 1000;
+@media screen and (min-width: 1000px) {
+    .header {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        height: 70px;
+        list-style-type: none;
+        background-color: rgb(37, 37, 37);
+        border-bottom: 1px solid rgb(210, 210, 210);
+        z-index: 1000;
+    }
+
+    .header_menu{
+        position: relative;
+        top: -18px;
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+    .header_menu li{
+        display: inline;
+        padding: 0 5% 0 0;
+    }
+    .header_menu p{
+        display: inline-block;
+        font-family: 'Lobster', 'arial', serif;
+        color: rgb(210, 210, 210);
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .header_menu p:hover{
+        color: rgb(255, 190, 0);
+    }
+
+    .logo_title {
+        padding: 17px 7px 17px 0;
+    }
+
+    .logo img {
+        cursor: pointer;
+    }
+
+    .logo p {
+        font-size: 20px;
+        font-family: 'Army', 'arial', serif;
+        color: rgb(210, 210, 210);
+        text-decoration: underline #945120;
+    }
+
+    .active {
+        outline: none
+    }
+
+    .main {
+        position: relative;
+        background-color: rgb(37, 37, 37);
+        z-index: 100;
+    }
+
+    .title_block {
+        font-size: 40px;
+    	font-weight: bold;
+        letter-spacing: 10px;
+        padding-top: 4vh;
+    }
+
+    .footer {
+        position: relative;
+        height: 60px;
+        background-color: rgb(37, 37, 37);
+        color: rgb(210, 210, 210);
+        font-size: 15px;
+        line-height: 0px;
+        z-index: 2;
+        text-align: center;
+        border-top: 3px solid rgb(255, 190, 0);
+    }
+
+    .acquisition,
+    .socials,
+    .copyright {
+        display: inline-block;
+        padding: 30px 0 0 0;
+    }
+
+    .socials {
+        padding: 0;
+    }
+
+    .title-delivery,
+    .title-payment {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0 20px 10px 20px;
+        text-align: left;
+    }
+
+    .delivery,
+    .payment {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        vertical-align: top;
+        font-size: 10px;
+    }
+
+    .delivery_item,
+    .payment_item {
+        margin: 0 20px 20px 20px;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    .payment_item {
+        width: 40%;
+    }
+
+    .mobile {
+        display: none;
+    }
 }
 
-.header_menu{
-    position: relative;
-    top: -18px;
-    padding: 0 0 20px 0;
-    text-align: center;
-}
-.header_menu li{
-    display: inline;
-    padding: 0 5% 0 0;
-}
-.header_menu p{
-    display: inline-block;
-    font-family: 'Lobster', 'arial', serif;
-    color: rgb(210, 210, 210);
-    cursor: pointer;
-    font-size: 22px;
-}
-.header_menu p:hover{
-    color: rgb(255, 190, 0);
-}
+@media screen and (max-width: 999px) {
+    .body_container {
+        display: none;
+    }
 
-.logo_title {
-    padding: 17px 7px 17px 0;
-}
+    .mobile {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        display: block;
+    }
 
-.logo img {
-    cursor: pointer;
-}
-
-.logo p {
-    font-size: 20px;
-    font-family: 'Army', 'arial', serif;
-    color: rgb(210, 210, 210);
-    text-decoration: underline #945120;
-}
-
-.active {
-    outline: none
-}
-
-.main {
-    position: relative;
-    background-color: rgb(37, 37, 37);
-    z-index: 100;
-}
-
-.title_block {
-    font-size: 40px;
-	font-weight: bold;
-    letter-spacing: 10px;
-    padding-top: 4vh;
-}
-
-.footer {
-    position: relative;
-    height: 60px;
-    background-color: rgb(37, 37, 37);
-    color: rgb(210, 210, 210);
-    font-size: 15px;
-    line-height: 0px;
-    z-index: 2;
-    text-align: center;
-    border-top: 3px solid rgb(255, 190, 0);
-}
-
-.acquisition,
-.socials,
-.copyright {
-    display: inline-block;
-    padding: 30px 0 0 0;
-}
-
-.socials {
-    padding: 0;
-}
-
-.title-delivery,
-.title-payment {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 20px 10px 20px;
-    text-align: left;
-}
-
-.delivery,
-.payment {
-    position: relative;
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    font-size: 10px;
-}
-
-.delivery_item,
-.payment_item {
-    margin: 0 20px 20px 20px;
-    vertical-align: top;
-    text-align: left;
-}
-
-.payment_item {
-    width: 40%;
+    .mobile p {
+        width: 100%;
+        margin-top: 50vh;
+        text-align: center;
+        color: white;
+    }
 }

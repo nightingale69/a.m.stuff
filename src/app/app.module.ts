@@ -15,7 +15,7 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 
 import { NguCarouselModule } from '@ngu/carousel';
 import { NgxSlidesModule } from 'ngx-slides';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule} from 'ng-simple-slideshow';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { IntroComponent } from './intro/intro.component';
 
